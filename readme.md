@@ -63,95 +63,93 @@
 * Я переписал код на более читаемый и лучше тестируемый. Поиск слова осуществляется сначала в городах, затем в странах а потом в континентах. В случае удачи поиск по более крупным сущностям не производится.
 
 
-      var requests = ['/countries', '/cities', '/populations'];
-      var responses = {};
+    var requests = ['/countries', '/cities', '/populations'];
+    var responses = {};
 
-      var input = window.prompt('Input something (city, country or continent):', 'Africa');
+    var input = window.prompt('Input something (city, country or continent):', 'Africa');
 
-      requests.forEach(function(request){
-        getData(request, function(error, result){
-          responses[request] = result;
+    requests.forEach(function(request){
+      getData(request, function(error, result){
+        responses[request] = result;
 
-          // check all responses
-          if ( requests.every(_exist(responses)) ) {
-            var population = getPopulations(responses, input).reduce(_add('count'), 0);
-            console.log('Total population in', input, ':', population);
-          }
-        });
-      })
-
-
-      function getPopulations(data, input){
-        var populations,
-            countries,
-            cities;
-
-        // search input in cities
-        populations = data['/populations']
-          .filter(_compare(input, 'name'));
-
-        if (populations.length) {
-          return populations;
+        // check all responses
+        if ( requests.every(_exist(responses)) ) {
+          var population = getPopulations(responses, input).reduce(_add('count'), 0);
+          console.log('Total population in', input, ':', population);
         }
+      });
+    })
 
-        // search input in countries
-        cities = data['/cities']
-          .filter(_compare(input, 'country'))
-          .map(_get('name'));
+    function getPopulations(data, input){
+      var populations,
+          countries,
+          cities;
 
-        populations = data['/populations']
-          .filter(_compareSome(cities, 'name'));
+      // search input in cities
+      populations = data['/populations']
+        .filter(_compare(input, 'name'));
 
-        if (populations.length) {
-          return populations;
-        }
-
-        // search input in continents
-        countries = data['/countries']
-          .filter(_compare(input, 'continent'))
-          .map(_get('name'));
-
-        cities = data['/cities']
-          .filter(_compareSome(countries, 'country'))
-          .map(_get('name'));
-
-        populations = data['/populations']
-          .filter(_compareSome(cities, 'name'));
-
-        if (populations.length) {
-          return populations;
-        }
-
-        return [];
+      if (populations.length) {
+        return populations;
       }
 
+      // search input in countries
+      cities = data['/cities']
+        .filter(_compare(input, 'country'))
+        .map(_get('name'));
 
-      function _exist(object){
-        return function(key){
-          return object.hasOwnProperty(key);
-        };
+      populations = data['/populations']
+        .filter(_compareSome(cities, 'name'));
+
+      if (populations.length) {
+        return populations;
       }
 
-      function _compare(value, key){
-        return function(element){
-          return value === (key ? element[key] : element);
-        };
+      // search input in continents
+      countries = data['/countries']
+        .filter(_compare(input, 'continent'))
+        .map(_get('name'));
+
+      cities = data['/cities']
+        .filter(_compareSome(countries, 'country'))
+        .map(_get('name'));
+
+      populations = data['/populations']
+        .filter(_compareSome(cities, 'name'));
+
+      if (populations.length) {
+        return populations;
       }
 
-      function _compareSome(array, key){
-        return function(element){
-          return array.some(_compare(key ? element[key] : element));
-        };
-      }
+      return [];
+    }
 
-      function _add(key){
-        return function(result, element){
-          return result += element[key];
-        };
-      }
+    function _exist(object){
+      return function(key){
+        return object.hasOwnProperty(key);
+      };
+    }
 
-      function _get(key){
-        return function(element){
-          return element[key];
-        };
-      }
+    function _compare(value, key){
+      return function(element){
+        return value === (key ? element[key] : element);
+      };
+    }
+
+    function _compareSome(array, key){
+      return function(element){
+        return array.some(_compare(key ? element[key] : element));
+      };
+    }
+
+    function _add(key){
+      return function(result, element){
+        return result += element[key];
+      };
+    }
+
+    function _get(key){
+      return function(element){
+        return element[key];
+      };
+    }

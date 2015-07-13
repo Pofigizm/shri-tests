@@ -82,6 +82,7 @@
       });
     })
     
+    
     function getPopulations(data, input){
       var populations,
           countries,
@@ -125,6 +126,7 @@
     
       return [];
     }
+    
     
     function _exist(object){
       return function(key){

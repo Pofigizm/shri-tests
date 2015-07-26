@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // body of table
   inner += '<tbody>' +
-    ShriData.data.reduce(function(res, el, ix) {
+    ShriData.data.slice(0, 100).reduce(function(res, el, ix) {
       return res + '<tr class="board-row" data-index="' + ix + '">' +
         shriBoard.reduce(function(inres, inel) {
           return inres + _html({
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   container.appendChild(board);
   console.timeEnd('render');
+  console.log(ShriData);
 });
 
 shriBoard = [

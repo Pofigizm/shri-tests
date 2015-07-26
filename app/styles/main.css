@@ -3,23 +3,124 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
-.index-container {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
+body, html {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  margin: 1vw auto;
+  width: 90vw;
+  font-size: 1.4rem;
   font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+  background-color: #f9f9f9;
+}
+td, th {
+  text-align: center;
+  padding: 1vw;
+  overflow: hidden;
 }
 .board {
-  margin: 50px auto 0 auto;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #f5f5f5;
-  border-radius: 6px;
-  padding: 20px;
+  border-collapse: collapse;
 }
 
+.board-type {
+  width: 5vw;
+}
+.board-number,
+.board-aircraft,
+.borad-time,
+.board-status {
+  width: 10vw;
+}
+.board-company,
+.board-city,
+.board-comments {
+  width: 15vw;
+}
+
+.board-head {
+  background-color: #ccc;
+}
+.board-row:hover,
+.board-row .hover {
+  color: red;
+  font-weight: 600;
+}
+.board-row:nth-child(2n) {
+  background-color: #eee;
+}
+
+/* more 900px */
+.board-number-code,
+.board-company-code,
+.board-city-code {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .board-company-full {
+    display: none;
+  }
+  .board-company-code {
+    display: inline;
+  }
+}
+
+@media (max-width: 800px) {
+  .board-number-full,
+  .board-company-logo,
+  .board-city-full {
+    display: none;
+  }
+  .board-number-code,
+  .board-company-code,
+  .board-city-code {
+    display: inline;
+  }
+}
+
+@media (max-width: 700px) {
+  .board-aircraft { 
+    display: none;
+  }
+  .borad-time,
+  .board-status {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .board-comments { 
+    display: none;
+  }
+  .borad-time,
+  .board-number {
+    width: 15vw;
+  }
+  .board-company,
+  .board-status {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .board-type {
+    width: 10vw;
+  }
+  .borad-time,
+  .board-status {
+    width: 25vw;
+  }
+  .board-company { 
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}

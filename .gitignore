@@ -1,3 +1,5 @@
+app/scripts/data.jsonp
 node_modules
 dist
 .tmp
+*.swp 

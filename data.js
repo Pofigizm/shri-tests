@@ -27,11 +27,13 @@ endFn = function() {
   fields = {};
   data.forEach(function(elem){
     Object.keys(elem).reduce(function(res, el){
-      res[el] = '';
+      res[el] = res[el] ? res[el] + 1 : 1;
       return res;
     }, fields);
   });
-  fields = Object.keys(fields);
+  fields = Object.keys(fields).sort(function(a, b) {
+    return fields[b] - fields[a];
+  });
   console.timeEnd('parse');
   console.time('write');
   fs.writeFile(file, 'ShriData = ' + JSON.stringify({

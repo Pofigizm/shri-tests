@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', function(){
   console.time('render');
 
   var board = document.createElement('table'),
-      container = document.querySelector('.container'),
-      inner = '';
+      container = document.querySelector('.board-wrapper'),
+      inner = '',
+      trArrival = 0,
+      trDeparture = 0;
 
   // head of table
   inner += '<thead><tr class="board-head">' +
@@ -22,7 +24,19 @@ document.addEventListener('DOMContentLoaded', function(){
   // body of table
   inner += '<tbody>' +
     ShriData.data.slice(0, 100).reduce(function(res, el, ix) {
-      return res + '<tr class="board-row" data-index="' + ix + '">' +
+      // add specific class to type
+      var typeKlass;
+
+      if (el['FlightType'] === 'A') {
+        typeKlass = ' board-arrival';
+        typeKlass += typeKlass + (trArrival++ % 2 === 0 ? '-even' : '-odd');
+      } else {
+        typeKlass = ' board-departure';
+        typeKlass += typeKlass + (trDeparture++ % 2 === 0 ? '-even' : '-odd');
+      }
+      // -even and -odd is fallback :nth-child(2n of .class) selector
+
+      return res + '<tr class="board-row' + typeKlass + '" data-index="' + ix + '">' +
         shriBoard.reduce(function(inres, inel) {
           return inres + _html({
             tag: 'td',
@@ -76,7 +90,7 @@ shriBoard = [
       }
     ]
   }, {
-    name: 'Авиакомпания',
+    name: 'Компания',
     klass: 'board-company',
     field: [
       {
@@ -155,6 +169,7 @@ function _html(tmpl, data) {
       klass = tmpl.klass,
       src = data[tmpl.src],
       href = data[tmpl.href],
+      noValueTag = ['img'],
       value;
 
   if ( Array.isArray(tmpl.value) ) {
@@ -162,14 +177,16 @@ function _html(tmpl, data) {
       return res + _html(el, data);
     }, '');
   } else {
-    value = String(data[tmpl.value] || '');
+    value = String(data[tmpl.value] || 'text');
   }
 
   return '<' + tag +
     (klass ? ' class="' + klass + '"': '') + 
     (src   ? ' src="'   + src   + '"': '') + 
     (href  ? ' href="'  + href  + '"': '') + 
-    '>' + value + '</' + tag + '>';
+    '>' +
+    (noValueTag.indexOf(tag) > -1 ? '' : value) +
+    '</' + tag + '>';
 }
 
 function _closest(el, fx) {

@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
+import {getShriData} from './data.js';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -31,23 +32,27 @@ gulp.task('html', ['styles'], () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('serve', ['styles'], () => {
-  browserSync({
-    notify: false,
-    port: 9000,
-    server: {
-      baseDir: ['.tmp', 'app'],
-      routes: {
-        '/bower_components': 'bower_components'
+  getShriData(() => {
+    console.log('All data updated!');
+    browserSync({
+      notify: false,
+      port: 9000,
+      server: {
+        baseDir: ['.tmp', 'app'],
+        routes: {
+          '/bower_components': 'bower_components'
+        }
       }
-    }
+    });
+
+    gulp.watch([
+      'app/*.html',
+      'app/scripts/*.js',
+      'app/scripts/*.json',
+    ]).on('change', reload);
+
+    gulp.watch('app/styles/**/*.css', ['styles']);
   });
-
-  gulp.watch([
-    'app/*.html',
-    'app/scripts/*.js',
-  ]).on('change', reload);
-
-  gulp.watch('app/styles/**/*.css', ['styles']);
 });
 
 gulp.task('build', ['html'], () => {

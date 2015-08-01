@@ -1,7 +1,7 @@
 var http = require('http'),
     fs = require('fs'),
     option, file, str, data, fields,
-    httpFn, endFn, fsFn;
+    httpFn, endFn, fsFn, exportCb;
 
 option = {
   host: 'www.flysfo.com',
@@ -45,9 +45,13 @@ endFn = function() {
 fsFn = function(err) {
   if (!err) {
     console.timeEnd('write');
+    exportCb();
   }
 };
 
-console.time('http');
-http.get(option, httpFn).end();
+export function getShriData(callback) {
+  exportCb = callback;
+  console.time('http');
+  http.get(option, httpFn).end();
+}
 

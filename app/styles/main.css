@@ -40,7 +40,6 @@ html {
 .board td,
 .board th {
   text-align: center;
-  overflow: hidden;
   padding: 1rem 0;
 }
 .board th {
@@ -51,14 +50,46 @@ html {
   background-color: #ccc;
   height: 4rem;
   top: 0;
+  z-index: 4;
 }
 .board-row:nth-child(2n) {
   background-color: #eee;
 }
-.board-row:hover,
-.board-row .hover {
+.board-row:hover {
   color: #39f;
-  font-weight: 600;
+}
+.board-row td {
+  position: relative;
+}
+.board-row td > * {
+  position: relative;
+  z-index: 2;
+}
+.board-row td::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+.board-row td::after {
+  content: "";
+  display: none;
+  background-color: #cef;
+  box-shadow: 0 0 2px 2px #cef;
+  opacity: 0.5;
+  position: fixed;
+  height: 96vh;
+  top: 2vh;
+  z-index: 1;
+}
+.board-row td:hover::before {
+  box-shadow: 0 0 1px 1px #ccc;
+}
+.board-row td:hover::after {
+  display: block;
 }
 
 /* select type menu and filtering */
@@ -71,7 +102,7 @@ html {
   transition: all 1s ease;
   position: absolute;
   transform: translateX(-100%);
-  z-index: 1;
+  z-index: 5;
 }
 .board-filter:hover {
   transform: translateX(0);
@@ -163,18 +194,26 @@ html {
 
 /* media size - begins more 900px  */
 
-.board-type {
+.board-type,
+.board-type::after {
   width: 5vw;
 }
 .board-number,
 .board-aircraft,
 .borad-time,
-.board-status {
+.board-status,
+.board-number::after,
+.board-aircraft::after,
+.borad-time::after,
+.board-status::after {
   width: 10vw;
 }
 .board-company,
 .board-city,
-.board-comments {
+.board-comments,
+.board-company::after,
+.board-city::after,
+.board-comments::after {
   width: 15vw;
 }
 .board-number-code,
@@ -209,9 +248,15 @@ html {
   .board-aircraft { 
     display: none;
   }
+  .board-type,
+  .board-type::after {
+    width: 7vw;
+  }
   .borad-time,
-  .board-status {
-    width: 15vw;
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
+    width: 14vw;
   }
 }
 
@@ -219,23 +264,31 @@ html {
   .board-comments { 
     display: none;
   }
-  .borad-time,
-  .board-number {
-    width: 15vw;
+  .board-number,
+  .board-number::after {
+    width: 14vw;
   }
   .board-company,
-  .board-status {
+  .board-status,
+  .board-company::after,
+  .board-status::after {
     width: 20vw;
   }
 }
 
 @media (max-width: 500px) {
-  .board-selector:before,
-  .board-type {
+  .board-type,
+  .board-type::after {
     width: 10vw;
   }
+  .board-number,
+  .board-number::after {
+    width: 15vw;
+  }
   .borad-time,
-  .board-status {
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
     width: 25vw;
   }
   .board-company { 
@@ -265,21 +318,30 @@ html {
     height: 100vh;
     box-shadow: none;
   }
+  .board-row td::after {
+    height: 100vh;
+    top: 0;
+  }
   .board-wrapper,
   .board,
   .board thead,
   .board tbody {
     width: 300px;
   }
-  .board-type {
+  .board-type,
+  .board-type::after {
     width: 40px;
   }
   .board-number,
-  .board-city {
+  .board-city,
+  .board-number::after,
+  .board-city::after {
     width: 50px;
   }
   .borad-time,
-  .board-status {
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
     width: 80px;
   }
 }
@@ -304,15 +366,20 @@ html {
   .board tbody {
     width: 265px;
   }
-  .board-type {
+  .board-type,
+  .board-type::after {
     width: 35px;
   }
   .board-number,
-  .board-city {
+  .board-city,
+  .board-number::after,
+  .board-city::after {
     width: 45px;
   }
   .borad-time,
-  .board-status {
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
     width: 70px;
   }
 }

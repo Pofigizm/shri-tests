@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function(){
   var container = document.querySelector('.board-wrapper'),
       board = _node('table', 'board'),
       content = [],
-      show = [0, 1],
       trArrival = 0,
       trDeparture = 0;
 
@@ -19,66 +18,30 @@ document.addEventListener('DOMContentLoaded', function(){
 
   content = _splitArr(ShriData.data, 100).map(function(tbody, index) {
     return _node('tbody', null, String(index), tbody.reduce(function(res, el, ix) {
-      // add specific class to type
-      var typeKlass = 'board-row';
-
-      if (el['FlightType'] === 'A') {
-        typeKlass += ' board-arrival';
-        typeKlass += ' board-arrival' + (trArrival++ % 2 === 0 ? '-even' : '-odd');
-      } else {
-        typeKlass += ' board-departure';
-        typeKlass += ' board-departure' + (trDeparture++ % 2 === 0 ? '-even' : '-odd');
-      }
-      // -even and -odd is fallback :nth-child(2n of .class) selector
-
       return res + _html({
         tag: 'tr',
-        klass: typeKlass,
+        klass: _getTypeClass(el),
         index: ix,
         inner: shriBoard.reduce(_getRow('td', el), '')
       });
     }, ''));
   });
 
-  function _getRow(tag, data, value) {
-    return function(res, el) {
-      return res + _html({
-        tag: tag,
-        klass: el.klass,
-        value: value || el.field
-      }, data || el);
-    };
-  }
-
-  show.forEach(function(index) {
-    board.appendChild(content[index]);
-  });
-
+  [0, 1].forEach(_addContent);
   container.appendChild(board);
 
   board.addEventListener('scroll', function() {
     var center = document.body.clientHeight / 2,
-        current = show.indexOf(show.filter(function(index) {
-          var elem = content[index].getBoundingClientRect();
-          return elem.top <= center && elem.bottom >= center;
-        })[0]);
-    if (current + 2 > show.length && show[current] !== (content.length - 1)) {
-      board.appendChild(content[show[current] + 1]);
-      show.push(show[current] + 1);
-      if (current > 1) {
-        var remove = show.shift();
-        board.scrollTop -= content[remove].getBoundingClientRect().height;
-        board.removeChild(content[remove]);
-      }
-    }
-    if (current - 1 < 0 && show[current] !== 0) {
-      var add = board.insertBefore(content[show[current] - 1], content[show[current]]);
-      board.scrollTop += add.getBoundingClientRect().height;
-      show.unshift(show[current] - 1);
-      if (current < 1) {
-        board.removeChild(content[show.pop()]);
-      }
-    }
+        current = Number(content.filter(function(elem) {
+          var rect = elem.getBoundingClientRect();
+          return rect.top <= center && rect.bottom >= center;
+        })[0].dataset.index);
+
+    _addContent(current + 1);
+    _removeContent(current - 2);
+
+    _addContent(current - 1);
+    _removeContent(current + 2);
   });
 
   board.addEventListener('click', function(event) {
@@ -92,6 +55,57 @@ document.addEventListener('DOMContentLoaded', function(){
 
   console.timeEnd('render');
   console.log(ShriData);
+
+  function _getTypeClass(data) {
+    var typeKlass = 'board-row';
+
+    if (data['FlightType'] === 'A') {
+      typeKlass += ' board-arrival';
+      typeKlass += ' board-arrival' + (trArrival++ % 2 === 0 ? '-even' : '-odd');
+    } else {
+      typeKlass += ' board-departure';
+      typeKlass += ' board-departure' + (trDeparture++ % 2 === 0 ? '-even' : '-odd');
+    }
+    // -even and -odd is fallback :nth-child(2n of .class) selector
+    return typeKlass;
+  }
+
+  function _getRow(tag, data, value) {
+    return function(res, el) {
+      return res + _html({
+        tag: tag,
+        klass: el.klass,
+        value: value || el.field
+      }, data || el);
+    };
+  }
+
+  function _addContent(index) {
+    if (_inBoard(index) || !content[index]) {
+      return;
+    }
+    if (_inBoard(index + 1)) {
+      board.insertBefore(content[index], content[index + 1]);
+      board.scrollTop += content[index].getBoundingClientRect().height;
+    } else {
+      board.appendChild(content[index]);
+    }
+  }
+
+  function _removeContent(index) {
+    if (!_inBoard(index) || !content[index]) {
+      return;
+    }
+    if (_inBoard(index + 1)) {
+      board.scrollTop -= content[index].getBoundingClientRect().height;
+    }
+    board.removeChild(content[index]);
+  }
+
+  function _inBoard(index) {
+    return [].indexOf.call(board.children, content[index]) !== -1;
+  }
+
 });
 
 shriBoard = [

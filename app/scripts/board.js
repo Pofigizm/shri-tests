@@ -14,40 +14,41 @@ document.addEventListener('DOMContentLoaded', function(){
   board.appendChild(_node('thead', null, null, _html({
     tag: 'tr',
     klass: 'board-head',
-    inner: shriBoard.reduce(function(res, el) {
-      return res + _html({
-        tag: 'th',
-        klass: el.klass,
-        value: 'name'
-      }, el);
-    }, '')
+    inner: shriBoard.reduce(_getRow('th', null, 'name'), '')
   })));
 
   content = _splitArr(ShriData.data, 100).map(function(tbody, index) {
     return _node('tbody', null, String(index), tbody.reduce(function(res, el, ix) {
       // add specific class to type
-      var typeKlass;
+      var typeKlass = 'board-row';
 
       if (el['FlightType'] === 'A') {
-        typeKlass = ' board-arrival';
-        typeKlass += typeKlass + (trArrival++ % 2 === 0 ? '-even' : '-odd');
+        typeKlass += ' board-arrival';
+        typeKlass += ' board-arrival' + (trArrival++ % 2 === 0 ? '-even' : '-odd');
       } else {
-        typeKlass = ' board-departure';
-        typeKlass += typeKlass + (trDeparture++ % 2 === 0 ? '-even' : '-odd');
+        typeKlass += ' board-departure';
+        typeKlass += ' board-departure' + (trDeparture++ % 2 === 0 ? '-even' : '-odd');
       }
       // -even and -odd is fallback :nth-child(2n of .class) selector
 
-      return res + '<tr class="board-row' + typeKlass + '" data-index="' + ix + '">' +
-        shriBoard.reduce(function(inres, inel) {
-          return inres + _html({
-            tag: 'td',
-            klass: inel.klass,
-            value: inel.field
-          }, el);
-        }, '') +
-        '</tr>';
+      return res + _html({
+        tag: 'tr',
+        klass: typeKlass,
+        index: ix,
+        inner: shriBoard.reduce(_getRow('td', el), '')
+      });
     }, ''));
   });
+
+  function _getRow(tag, data, value) {
+    return function(res, el) {
+      return res + _html({
+        tag: tag,
+        klass: el.klass,
+        value: value || el.field
+      }, data || el);
+    };
+  }
 
   show.forEach(function(index) {
     board.appendChild(content[index]);

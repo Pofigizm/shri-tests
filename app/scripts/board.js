@@ -4,26 +4,27 @@ var shriBoard;
 document.addEventListener('DOMContentLoaded', function(){
   console.time('render');
 
-  var board = document.createElement('table'),
-      container = document.querySelector('.board-wrapper'),
-      inner = '',
+  var container = document.querySelector('.board-wrapper'),
+      board = _node('table', 'board'),
+      content = [],
+      show = [0, 1],
       trArrival = 0,
       trDeparture = 0;
 
-  // head of table
-  inner += '<thead><tr class="board-head">' +
-    shriBoard.reduce(function(res, el) {
+  board.appendChild(_node('thead', null, null, _html({
+    tag: 'tr',
+    klass: 'board-head',
+    inner: shriBoard.reduce(function(res, el) {
       return res + _html({
         tag: 'th',
         klass: el.klass,
         value: 'name'
       }, el);
-    }, '') +
-    '</tr></thead>';
+    }, '')
+  })));
 
-  // body of table
-  inner += '<tbody>' +
-    ShriData.data.reduce(function(res, el, ix) {
+  content = _splitArr(ShriData.data, 100).map(function(tbody, index) {
+    return _node('tbody', null, String(index), tbody.reduce(function(res, el, ix) {
       // add specific class to type
       var typeKlass;
 
@@ -45,11 +46,40 @@ document.addEventListener('DOMContentLoaded', function(){
           }, el);
         }, '') +
         '</tr>';
-    }, '') +
-    '</tbody>';
- 
-  board.className = 'board';
-  board.innerHTML = inner;
+    }, ''));
+  });
+
+  show.forEach(function(index) {
+    board.appendChild(content[index]);
+  });
+
+  container.appendChild(board);
+
+  board.addEventListener('scroll', function() {
+    var center = document.body.clientHeight / 2,
+        current = show.indexOf(show.filter(function(index) {
+          var elem = content[index].getBoundingClientRect();
+          return elem.top <= center && elem.bottom >= center;
+        })[0]);
+    if (current + 2 > show.length && show[current] !== (content.length - 1)) {
+      board.appendChild(content[show[current] + 1]);
+      show.push(show[current] + 1);
+      if (current > 1) {
+        var remove = show.shift();
+        board.scrollTop -= content[remove].getBoundingClientRect().height;
+        board.removeChild(content[remove]);
+      }
+    }
+    if (current - 1 < 0 && show[current] !== 0) {
+      var add = board.insertBefore(content[show[current] - 1], content[show[current]]);
+      board.scrollTop += add.getBoundingClientRect().height;
+      show.unshift(show[current] - 1);
+      if (current < 1) {
+        board.removeChild(content[show.pop()]);
+      }
+    }
+  });
+
   board.addEventListener('click', function(event) {
     var row = _closest(event.target, function(el) {
       return el.className === 'board-row'; 
@@ -59,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  container.appendChild(board);
   console.timeEnd('render');
   console.log(ShriData);
 });
@@ -164,26 +193,44 @@ shriBoard = [
   }
 ];
 
+function _node(tag, klass, index, inner) {
+  var node = document.createElement(tag || 'div');
+
+  if (klass) {
+    node.className = klass;
+  }
+  if (index) {
+    node.setAttribute('data-index', index);
+  }
+  node.innerHTML = inner || '';
+  return node;
+}
+
 function _html(tmpl, data) {
   var tag = tmpl.tag || 'div',
       klass = tmpl.klass,
-      src = data[tmpl.src],
-      href = data[tmpl.href],
+      inner = tmpl.inner,
+      index = tmpl.index,
       noValueTag = ['img'],
-      value;
+      src, href, value;
+
+  data = data || {};
+  src = data[tmpl.src];
+  href = data[tmpl.href];
 
   if ( Array.isArray(tmpl.value) ) {
     value = tmpl.value.reduce(function(res, el) {
       return res + _html(el, data);
     }, '');
   } else {
-    value = String(data[tmpl.value] || 'text');
+    value = inner || String(data[tmpl.value] || 'text');
   }
 
   return '<' + tag +
-    (klass ? ' class="' + klass + '"': '') + 
-    (src   ? ' src="'   + src   + '"': '') + 
-    (href  ? ' href="'  + href  + '"': '') + 
+    (klass ? ' class="'      + klass + '"': '') +
+    (src   ? ' src="'        + src   + '"': '') +
+    (href  ? ' href="'       + href  + '"': '') +
+    (index ? ' data-index="' + index + '"' : '') +
     '>' +
     (noValueTag.indexOf(tag) > -1 ? '' : value) +
     '</' + tag + '>';
@@ -193,3 +240,10 @@ function _closest(el, fx) {
   return el && (fx(el) ? el : _closest(el.parentNode, fx));
 }
 
+function _splitArr(arr, size) {
+  if (arr.length <= size) {
+    return [arr];
+  }
+  return [arr.slice(0, size)]
+    .concat(_splitArr(arr.slice(size), size));
+}

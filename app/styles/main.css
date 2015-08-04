@@ -45,6 +45,14 @@ html {
 .board th {
   height: 2rem;
 }
+.board td span,
+.board td img {
+  margin: 0;
+  padding: 0 1rem;
+}
+.board td img {
+  height: 2rem;
+}
 .board-head {
   position: absolute;
   background-color: #ccc;

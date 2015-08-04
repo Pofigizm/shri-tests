@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // body of table
   inner += '<tbody>' +
-    ShriData.data.slice(0, 100).reduce(function(res, el, ix) {
+    ShriData.data.reduce(function(res, el, ix) {
       // add specific class to type
       var typeKlass;
 
@@ -157,8 +157,8 @@ shriBoard = [
     field: [
       {
         tag: 'span',
-        klass: 'board-status-full',
-        value: 'Status'
+        klass: 'board-comments-full',
+        value: 'Comment'
       }
     ]
   }

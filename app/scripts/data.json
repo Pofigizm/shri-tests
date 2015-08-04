@@ -51,8 +51,8 @@ ShriData = {
       "BagClaim": "12",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "EY183",
       "iGate": "A",
@@ -65,9 +65,9 @@ ShriData = {
       "CityCode": "AUH",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Airbus A340",
       "Status": "Retimed",
-      "Comment": "comment #931"
+      "Comment": "comment #51"
     },
     {
       "Carrier": "EY",
@@ -86,8 +86,8 @@ ShriData = {
       "Gate": "A9",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "EY182",
       "iGate": "",
@@ -99,9 +99,9 @@ ShriData = {
       "CityCode": "AUH",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #791"
+      "Aircraft": "Boeing 777",
+      "Status": "Retimed",
+      "Comment": "comment #146"
     },
     {
       "Carrier": "WN",
@@ -125,8 +125,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN1728",
       "iGate": "",
@@ -137,9 +137,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "ABQ",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #428"
+      "Aircraft": "Airbus A340",
+      "Status": "Landed",
+      "Comment": "comment #871"
     },
     {
       "Carrier": "UA",
@@ -157,8 +157,8 @@ ShriData = {
       "Terminal": "3",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6416",
       "iGate": "",
@@ -172,8 +172,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 747",
-      "Status": "Landed",
-      "Comment": "comment #434"
+      "Status": "Confirmed",
+      "Comment": "comment #914"
     },
     {
       "Carrier": "UA",
@@ -191,8 +191,8 @@ ShriData = {
       "Terminal": "3",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6234",
       "iGate": "",
@@ -205,9 +205,9 @@ ShriData = {
       "CityCode": "ABQ",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Retimed",
-      "Comment": "comment #633"
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #164"
     },
     {
       "Carrier": "KL",
@@ -226,8 +226,8 @@ ShriData = {
       "BagClaim": "7",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "KL605",
       "iGate": "A",
@@ -241,8 +241,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #270"
+      "Status": "Cancelled",
+      "Comment": "comment #227"
     },
     {
       "Carrier": "DL",
@@ -257,8 +257,8 @@ ShriData = {
       "Gate": "40",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL1694",
       "iGate": "",
@@ -270,16 +270,16 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
+      "Aircraft": "Boeing 747",
       "Status": "Landed",
-      "Comment": "comment #937"
+      "Comment": "comment #405"
     },
     {
       "Carrier": "US",
       "FlightNum": "590",
       "FlightType": "A",
       "SchedTime": "12:49 AM",
-      "EstTime": "12:50 AM",
+      "EstTime": "12:55 AM",
       "ActTime": {
         "@attributes": {
           "nil": "true"
@@ -293,22 +293,22 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US590",
       "iGate": "",
       "SchedTimeMili": "00:49",
-      "EstTimeMili": "00:50",
+      "EstTimeMili": "00:55",
       "BaseFlightCarrier": "",
       "CityFull": "Atlanta",
       "CarrierFull": "US Airways",
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
+      "Aircraft": "Boeing 747",
       "Status": "Confirmed",
-      "Comment": "comment #67"
+      "Comment": "comment #446"
     },
     {
       "Carrier": "US",
@@ -329,8 +329,8 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US610",
       "iGate": "",
@@ -342,9 +342,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Confirmed",
-      "Comment": "comment #586"
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #954"
     },
     {
       "Carrier": "DL",
@@ -363,8 +363,8 @@ ShriData = {
       "Gate": "40",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL1210",
       "iGate": "",
@@ -376,9 +376,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #793"
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #665"
     },
     {
       "Carrier": "WN",
@@ -402,8 +402,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN317",
       "iGate": "",
@@ -414,9 +414,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "ATL",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Confirmed",
-      "Comment": "comment #650"
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #547"
     },
     {
       "Carrier": "DL",
@@ -437,8 +437,8 @@ ShriData = {
       "Gate": "40",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL64",
       "iGate": "",
@@ -451,8 +451,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 777",
-      "Status": "Confirmed",
-      "Comment": "comment #465"
+      "Status": "Landed",
+      "Comment": "comment #780"
     },
     {
       "Carrier": "UA",
@@ -471,8 +471,8 @@ ShriData = {
       "Gate": "64",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1602",
       "iGate": "",
@@ -484,44 +484,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Cancelled",
-      "Comment": "comment #639"
-    },
-    {
-      "Carrier": "UA",
-      "FlightNum": "1900",
-      "FlightType": "A",
-      "SchedTime": "9:47 AM",
-      "EstTime": "9:47 AM",
-      "ActTime": {
-        "@attributes": {
-          "nil": "true"
-        }
-      },
-      "City1": "ATL",
-      "ArrCityName1": "Atlanta",
-      "Terminal": "3",
-      "Gate": "65",
-      "BagClaim": "2",
-      "BaseFlight": "",
-      "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "UA1900",
-      "iGate": "",
-      "SchedTimeMili": "09:47",
-      "EstTimeMili": "09:47",
-      "BaseFlightCarrier": "",
-      "CityFull": "Atlanta",
-      "CarrierFull": "United",
-      "CityCode": "ATL",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A380",
       "Status": "Landed",
-      "Comment": "comment #540"
+      "Comment": "comment #361"
     },
     {
       "Carrier": "UA",
@@ -541,8 +506,43 @@ ShriData = {
       "BagClaim": "2",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "UA1900",
+      "iGate": "",
+      "SchedTimeMili": "09:47",
+      "EstTimeMili": "09:47",
+      "BaseFlightCarrier": "",
+      "CityFull": "Atlanta",
+      "CarrierFull": "United",
+      "CityCode": "ATL",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #876"
+    },
+    {
+      "Carrier": "UA",
+      "FlightNum": "1900",
+      "FlightType": "A",
+      "SchedTime": "9:47 AM",
+      "EstTime": "9:47 AM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "ATL",
+      "ArrCityName1": "Atlanta",
+      "Terminal": "3",
+      "Gate": "65",
+      "BagClaim": "2",
+      "BaseFlight": "",
+      "inc": 12,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1900",
       "iGate": "",
@@ -555,8 +555,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #427"
+      "Status": "Retimed",
+      "Comment": "comment #532"
     },
     {
       "Carrier": "UA",
@@ -576,8 +576,8 @@ ShriData = {
       "BagClaim": "2",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1900",
       "iGate": "",
@@ -589,9 +589,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #119"
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #922"
     },
     {
       "Carrier": "DL",
@@ -610,8 +610,8 @@ ShriData = {
       "Gate": "40",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL2559",
       "iGate": "",
@@ -624,8 +624,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Confirmed",
-      "Comment": "comment #465"
+      "Status": "Landed",
+      "Comment": "comment #633"
     },
     {
       "Carrier": "DL",
@@ -644,8 +644,8 @@ ShriData = {
       "Gate": "41",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL2049",
       "iGate": "",
@@ -657,9 +657,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Retimed",
-      "Comment": "comment #213"
+      "Aircraft": "Airbus A340",
+      "Status": "Landed",
+      "Comment": "comment #799"
     },
     {
       "Carrier": "WN",
@@ -681,8 +681,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN307",
       "iGate": "",
@@ -693,45 +693,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "ATL",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Landed",
-      "Comment": "comment #164"
-    },
-    {
-      "Carrier": "DL",
-      "FlightNum": "61",
-      "FlightType": "D",
-      "SchedTime": "11:55 AM",
-      "EstTime": "11:55 AM",
-      "ActTime": {
-        "@attributes": {
-          "nil": "true"
-        }
-      },
-      "City1": "ATL",
-      "DepCityName1": "Atlanta",
-      "City2": "GIG",
-      "DepCityName2": "Rio De Janeiro",
-      "Terminal": "1",
-      "BaseFlight": "",
-      "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "DL61",
-      "iGate": "",
-      "SchedTimeMili": "11:55",
-      "EstTimeMili": "11:55",
-      "BaseFlightCarrier": "",
-      "CityFull": "Atlanta",
-      "CarrierFull": "Delta Air Lines",
-      "Gate": "",
-      "CityCode": "ATL",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A380",
-      "Status": "Landed",
-      "Comment": "comment #340"
+      "Status": "Cancelled",
+      "Comment": "comment #237"
     },
     {
       "Carrier": "DL",
@@ -751,8 +715,8 @@ ShriData = {
       "Terminal": "1",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL61",
       "iGate": "",
@@ -766,8 +730,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 777",
-      "Status": "Cancelled",
-      "Comment": "comment #869"
+      "Status": "Landed",
+      "Comment": "comment #532"
     },
     {
       "Carrier": "DL",
@@ -787,8 +751,8 @@ ShriData = {
       "Terminal": "1",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL61",
       "iGate": "",
@@ -801,9 +765,45 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Confirmed",
-      "Comment": "comment #881"
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #958"
+    },
+    {
+      "Carrier": "DL",
+      "FlightNum": "61",
+      "FlightType": "D",
+      "SchedTime": "11:55 AM",
+      "EstTime": "11:55 AM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "ATL",
+      "DepCityName1": "Atlanta",
+      "City2": "GIG",
+      "DepCityName2": "Rio De Janeiro",
+      "Terminal": "1",
+      "BaseFlight": "",
+      "inc": 12,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "DL61",
+      "iGate": "",
+      "SchedTimeMili": "11:55",
+      "EstTimeMili": "11:55",
+      "BaseFlightCarrier": "",
+      "CityFull": "Atlanta",
+      "CarrierFull": "Delta Air Lines",
+      "Gate": "",
+      "CityCode": "ATL",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Boeing 777",
+      "Status": "Retimed",
+      "Comment": "comment #365"
     },
     {
       "Carrier": "US",
@@ -824,8 +824,8 @@ ShriData = {
       "Gate": "47",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US461",
       "iGate": "",
@@ -837,9 +837,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Boeing 747",
       "Status": "Cancelled",
-      "Comment": "comment #976"
+      "Comment": "comment #345"
     },
     {
       "Carrier": "DL",
@@ -857,8 +857,8 @@ ShriData = {
       "Terminal": "1",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL2265",
       "iGate": "",
@@ -871,9 +871,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Airbus A340",
       "Status": "Cancelled",
-      "Comment": "comment #167"
+      "Comment": "comment #473"
     },
     {
       "Carrier": "WN",
@@ -897,8 +897,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN4277",
       "iGate": "",
@@ -909,39 +909,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "ATL",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Airbus A340",
       "Status": "Confirmed",
-      "Comment": "comment #832"
-    },
-    {
-      "Carrier": "UA",
-      "FlightNum": "1699",
-      "FlightType": "D",
-      "SchedTime": "10:46 PM",
-      "EstTime": "10:46 PM",
-      "ActTime": "11:00 PM",
-      "City1": "ATL",
-      "DepCityName1": "Atlanta",
-      "Terminal": "3",
-      "Gate": "82",
-      "BaseFlight": "",
-      "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "UA1699",
-      "iGate": "",
-      "SchedTimeMili": "22:46",
-      "EstTimeMili": "22:46",
-      "BaseFlightCarrier": "",
-      "CityFull": "Atlanta",
-      "CarrierFull": "United",
-      "CityCode": "ATL",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Confirmed",
-      "Comment": "comment #267"
+      "Comment": "comment #98"
     },
     {
       "Carrier": "DL",
@@ -956,8 +926,8 @@ ShriData = {
       "Gate": "40",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "DL990",
       "iGate": "",
@@ -969,9 +939,9 @@ ShriData = {
       "CityCode": "ATL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #441"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #835"
     },
     {
       "Carrier": "UA",
@@ -991,8 +961,8 @@ ShriData = {
       "BagClaim": "2",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA223",
       "iGate": "",
@@ -1005,8 +975,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #660"
+      "Status": "Retimed",
+      "Comment": "comment #176"
     },
     {
       "Carrier": "VX",
@@ -1024,8 +994,8 @@ ShriData = {
       "Terminal": "2",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "VX219",
       "iGate": "",
@@ -1038,9 +1008,9 @@ ShriData = {
       "CityCode": "AUS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #758"
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #777"
     },
     {
       "Carrier": "UA",
@@ -1060,8 +1030,8 @@ ShriData = {
       "BagClaim": "2",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA358",
       "iGate": "",
@@ -1073,9 +1043,9 @@ ShriData = {
       "CityCode": "AUS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Cancelled",
-      "Comment": "comment #948"
+      "Aircraft": "Airbus A380",
+      "Status": "Retimed",
+      "Comment": "comment #785"
     },
     {
       "Carrier": "UA",
@@ -1096,8 +1066,8 @@ ShriData = {
       "Gate": "63",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA330",
       "iGate": "",
@@ -1109,9 +1079,9 @@ ShriData = {
       "CityCode": "AUS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Confirmed",
-      "Comment": "comment #260"
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #439"
     },
     {
       "Carrier": "UA",
@@ -1134,8 +1104,8 @@ ShriData = {
       "Gate": "69",
       "BaseFlight": "",
       "inc": 15,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1748",
       "iGate": "",
@@ -1148,8 +1118,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Landed",
-      "Comment": "comment #699"
+      "Status": "Retimed",
+      "Comment": "comment #59"
     },
     {
       "Carrier": "UA",
@@ -1172,8 +1142,8 @@ ShriData = {
       "Gate": "60",
       "BaseFlight": "",
       "inc": 15,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1526",
       "iGate": "",
@@ -1185,9 +1155,9 @@ ShriData = {
       "CityCode": "AUS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Cancelled",
-      "Comment": "comment #358"
+      "Aircraft": "Airbus A380",
+      "Status": "Confirmed",
+      "Comment": "comment #623"
     },
     {
       "Carrier": "VX",
@@ -1205,8 +1175,8 @@ ShriData = {
       "Terminal": "2",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "VX218",
       "iGate": "",
@@ -1219,9 +1189,9 @@ ShriData = {
       "CityCode": "AUS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Cancelled",
-      "Comment": "comment #857"
+      "Aircraft": "Airbus A380",
+      "Status": "Confirmed",
+      "Comment": "comment #62"
     },
     {
       "Carrier": "WN",
@@ -1245,8 +1215,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN2954",
       "iGate": "",
@@ -1257,9 +1227,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "AUS",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #121"
+      "Aircraft": "Airbus A340",
+      "Status": "Confirmed",
+      "Comment": "comment #749"
     },
     {
       "Carrier": "UA",
@@ -1274,8 +1244,8 @@ ShriData = {
       "Gate": "79",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6293",
       "iGate": "",
@@ -1287,9 +1257,9 @@ ShriData = {
       "CityCode": "AUS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #493"
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #348"
     },
     {
       "Carrier": "UA",
@@ -1308,8 +1278,8 @@ ShriData = {
       "Gate": "73A",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA5613",
       "iGate": "",
@@ -1322,8 +1292,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #627"
+      "Status": "Cancelled",
+      "Comment": "comment #687"
     },
     {
       "Carrier": "UA",
@@ -1343,8 +1313,8 @@ ShriData = {
       "BagClaim": "6",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA5637",
       "iGate": "",
@@ -1356,9 +1326,9 @@ ShriData = {
       "CityCode": "BFL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Confirmed",
-      "Comment": "comment #177"
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #916"
     },
     {
       "Carrier": "WN",
@@ -1382,8 +1352,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN925",
       "iGate": "",
@@ -1394,9 +1364,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "BWI",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
+      "Aircraft": "Airbus A340",
       "Status": "Landed",
-      "Comment": "comment #196"
+      "Comment": "comment #587"
     },
     {
       "Carrier": "UA",
@@ -1416,8 +1386,8 @@ ShriData = {
       "BagClaim": "1",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA330",
       "iGate": "",
@@ -1429,9 +1399,9 @@ ShriData = {
       "CityCode": "BWI",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #794"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #246"
     },
     {
       "Carrier": "UA",
@@ -1446,8 +1416,8 @@ ShriData = {
       "Gate": "88",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1947",
       "iGate": "",
@@ -1459,16 +1429,16 @@ ShriData = {
       "CityCode": "BWI",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Confirmed",
-      "Comment": "comment #302"
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #678"
     },
     {
       "Carrier": "UA",
       "FlightNum": "1477",
       "FlightType": "A",
       "SchedTime": "11:57 PM",
-      "EstTime": "12:49 AM",
+      "EstTime": "12:46 AM",
       "ActTime": {
         "@attributes": {
           "nil": "true"
@@ -1483,22 +1453,22 @@ ShriData = {
       "BagClaim": "1",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1477",
       "iGate": "",
       "SchedTimeMili": "23:57",
-      "EstTimeMili": "00:49",
+      "EstTimeMili": "00:46",
       "BaseFlightCarrier": "",
       "CityFull": "Baltimore",
       "CarrierFull": "United",
       "CityCode": "BWI",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #3"
+      "Aircraft": "Airbus A340",
+      "Status": "Landed",
+      "Comment": "comment #632"
     },
     {
       "Carrier": "UA",
@@ -1517,8 +1487,8 @@ ShriData = {
       "BagClaim": "6",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "UA888",
       "iGate": "G",
@@ -1532,8 +1502,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #232"
+      "Status": "Cancelled",
+      "Comment": "comment #451"
     },
     {
       "Carrier": "UA",
@@ -1551,8 +1521,8 @@ ShriData = {
       "Terminal": "I",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "UA889",
       "iGate": "",
@@ -1566,8 +1536,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 747",
-      "Status": "Cancelled",
-      "Comment": "comment #877"
+      "Status": "Retimed",
+      "Comment": "comment #34"
     },
     {
       "Carrier": "CA",
@@ -1588,8 +1558,8 @@ ShriData = {
       "BagClaim": "4",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "CA985",
       "iGate": "G",
@@ -1602,9 +1572,9 @@ ShriData = {
       "CityCode": "PEK",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Confirmed",
-      "Comment": "comment #646"
+      "Aircraft": "Boeing 777",
+      "Status": "Landed",
+      "Comment": "comment #834"
     },
     {
       "Carrier": "UA",
@@ -1625,8 +1595,8 @@ ShriData = {
       "Gate": "75",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA579",
       "iGate": "",
@@ -1638,9 +1608,9 @@ ShriData = {
       "CityCode": "BIL",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
+      "Aircraft": "Airbus A380",
       "Status": "Cancelled",
-      "Comment": "comment #229"
+      "Comment": "comment #375"
     },
     {
       "Carrier": "UA",
@@ -1660,8 +1630,8 @@ ShriData = {
       "BagClaim": "6",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6396",
       "iGate": "",
@@ -1673,9 +1643,9 @@ ShriData = {
       "CityCode": "BOI",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Confirmed",
-      "Comment": "comment #833"
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #573"
     },
     {
       "Carrier": "UA",
@@ -1694,8 +1664,8 @@ ShriData = {
       "Gate": "77B",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6382",
       "iGate": "",
@@ -1708,8 +1678,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Landed",
-      "Comment": "comment #928"
+      "Status": "Retimed",
+      "Comment": "comment #932"
     },
     {
       "Carrier": "UA",
@@ -1728,8 +1698,8 @@ ShriData = {
       "Gate": "77B",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6380",
       "iGate": "",
@@ -1741,9 +1711,9 @@ ShriData = {
       "CityCode": "BOI",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Retimed",
-      "Comment": "comment #386"
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #537"
     },
     {
       "Carrier": "UA",
@@ -1761,8 +1731,8 @@ ShriData = {
       "Terminal": "3",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA5543",
       "iGate": "",
@@ -1775,9 +1745,9 @@ ShriData = {
       "CityCode": "BOI",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #368"
+      "Aircraft": "Boeing 777",
+      "Status": "Landed",
+      "Comment": "comment #460"
     },
     {
       "Carrier": "UA",
@@ -1798,8 +1768,8 @@ ShriData = {
       "Gate": "65",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1946",
       "iGate": "",
@@ -1811,9 +1781,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Landed",
-      "Comment": "comment #251"
+      "Aircraft": "Airbus A340",
+      "Status": "Retimed",
+      "Comment": "comment #186"
     },
     {
       "Carrier": "VX",
@@ -1831,8 +1801,8 @@ ShriData = {
       "Terminal": "2",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "VX350",
       "iGate": "",
@@ -1845,9 +1815,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
+      "Aircraft": "Boeing 747",
       "Status": "Cancelled",
-      "Comment": "comment #836"
+      "Comment": "comment #62"
     },
     {
       "Carrier": "B6",
@@ -1866,8 +1836,8 @@ ShriData = {
       "Gate": "A11",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "B6434",
       "iGate": "",
@@ -1879,9 +1849,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #385"
+      "Aircraft": "Airbus A340",
+      "Status": "Retimed",
+      "Comment": "comment #856"
     },
     {
       "Carrier": "UA",
@@ -1902,8 +1872,8 @@ ShriData = {
       "Gate": "65",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA325",
       "iGate": "",
@@ -1915,9 +1885,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Landed",
-      "Comment": "comment #328"
+      "Aircraft": "Airbus A340",
+      "Status": "Cancelled",
+      "Comment": "comment #20"
     },
     {
       "Carrier": "VX",
@@ -1935,8 +1905,8 @@ ShriData = {
       "Terminal": "2",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "VX352",
       "iGate": "",
@@ -1949,9 +1919,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #404"
+      "Aircraft": "Boeing 747",
+      "Status": "Cancelled",
+      "Comment": "comment #765"
     },
     {
       "Carrier": "UA",
@@ -1971,8 +1941,8 @@ ShriData = {
       "BagClaim": "9",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1122",
       "iGate": "",
@@ -1984,9 +1954,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
+      "Aircraft": "Airbus A340",
       "Status": "Cancelled",
-      "Comment": "comment #924"
+      "Comment": "comment #596"
     },
     {
       "Carrier": "B6",
@@ -2004,8 +1974,8 @@ ShriData = {
       "Terminal": "I",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "B6534",
       "iGate": "",
@@ -2019,8 +1989,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #735"
+      "Status": "Landed",
+      "Comment": "comment #599"
     },
     {
       "Carrier": "UA",
@@ -2040,78 +2010,8 @@ ShriData = {
       "BagClaim": "9",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "UA1796",
-      "iGate": "",
-      "SchedTimeMili": "10:35",
-      "EstTimeMili": "10:22",
-      "BaseFlightCarrier": "",
-      "CityFull": "Boston",
-      "CarrierFull": "United",
-      "CityCode": "BOS",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Cancelled",
-      "Comment": "comment #895"
-    },
-    {
-      "Carrier": "UA",
-      "FlightNum": "1796",
-      "FlightType": "A",
-      "SchedTime": "10:35 AM",
-      "EstTime": "10:22 AM",
-      "ActTime": {
-        "@attributes": {
-          "nil": "true"
-        }
-      },
-      "City1": "BOS",
-      "ArrCityName1": "Boston",
-      "Terminal": "3",
-      "Gate": "68",
-      "BagClaim": "9",
-      "BaseFlight": "",
-      "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "UA1796",
-      "iGate": "",
-      "SchedTimeMili": "10:35",
-      "EstTimeMili": "10:22",
-      "BaseFlightCarrier": "",
-      "CityFull": "Boston",
-      "CarrierFull": "United",
-      "CityCode": "BOS",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #100"
-    },
-    {
-      "Carrier": "UA",
-      "FlightNum": "1796",
-      "FlightType": "A",
-      "SchedTime": "10:35 AM",
-      "EstTime": "10:22 AM",
-      "ActTime": {
-        "@attributes": {
-          "nil": "true"
-        }
-      },
-      "City1": "BOS",
-      "ArrCityName1": "Boston",
-      "Terminal": "3",
-      "Gate": "68",
-      "BagClaim": "9",
-      "BaseFlight": "",
-      "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1796",
       "iGate": "",
@@ -2125,7 +2025,77 @@ ShriData = {
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A380",
       "Status": "Landed",
-      "Comment": "comment #839"
+      "Comment": "comment #137"
+    },
+    {
+      "Carrier": "UA",
+      "FlightNum": "1796",
+      "FlightType": "A",
+      "SchedTime": "10:35 AM",
+      "EstTime": "10:22 AM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "BOS",
+      "ArrCityName1": "Boston",
+      "Terminal": "3",
+      "Gate": "68",
+      "BagClaim": "9",
+      "BaseFlight": "",
+      "inc": 12,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "UA1796",
+      "iGate": "",
+      "SchedTimeMili": "10:35",
+      "EstTimeMili": "10:22",
+      "BaseFlightCarrier": "",
+      "CityFull": "Boston",
+      "CarrierFull": "United",
+      "CityCode": "BOS",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Boeing 777",
+      "Status": "Landed",
+      "Comment": "comment #468"
+    },
+    {
+      "Carrier": "UA",
+      "FlightNum": "1796",
+      "FlightType": "A",
+      "SchedTime": "10:35 AM",
+      "EstTime": "10:22 AM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "BOS",
+      "ArrCityName1": "Boston",
+      "Terminal": "3",
+      "Gate": "68",
+      "BagClaim": "9",
+      "BaseFlight": "",
+      "inc": 12,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "UA1796",
+      "iGate": "",
+      "SchedTimeMili": "10:35",
+      "EstTimeMili": "10:22",
+      "BaseFlightCarrier": "",
+      "CityFull": "Boston",
+      "CarrierFull": "United",
+      "CityCode": "BOS",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #1"
     },
     {
       "Carrier": "UA",
@@ -2146,8 +2116,8 @@ ShriData = {
       "Gate": "65",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1742",
       "iGate": "",
@@ -2159,9 +2129,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
+      "Aircraft": "Airbus A340",
       "Status": "Cancelled",
-      "Comment": "comment #244"
+      "Comment": "comment #251"
     },
     {
       "Carrier": "VX",
@@ -2179,8 +2149,8 @@ ShriData = {
       "Terminal": "2",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "VX351",
       "iGate": "",
@@ -2193,9 +2163,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Landed",
-      "Comment": "comment #899"
+      "Aircraft": "Airbus A380",
+      "Status": "Cancelled",
+      "Comment": "comment #62"
     },
     {
       "Carrier": "US",
@@ -2216,8 +2186,8 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US1783",
       "iGate": "",
@@ -2229,9 +2199,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #14"
+      "Aircraft": "Boeing 747",
+      "Status": "Confirmed",
+      "Comment": "comment #580"
     },
     {
       "Carrier": "WN",
@@ -2253,8 +2223,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN277",
       "iGate": "",
@@ -2266,8 +2236,8 @@ ShriData = {
       "CityCode": "BOS",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
-      "Status": "Retimed",
-      "Comment": "comment #926"
+      "Status": "Confirmed",
+      "Comment": "comment #328"
     },
     {
       "Carrier": "UA",
@@ -2290,8 +2260,8 @@ ShriData = {
       "Gate": "85",
       "BaseFlight": "",
       "inc": 15,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA677",
       "iGate": "",
@@ -2303,9 +2273,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
+      "Aircraft": "Airbus A340",
       "Status": "Landed",
-      "Comment": "comment #273"
+      "Comment": "comment #134"
     },
     {
       "Carrier": "B6",
@@ -2324,8 +2294,8 @@ ShriData = {
       "BagClaim": "12",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "B6133",
       "iGate": "A",
@@ -2338,9 +2308,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Confirmed",
-      "Comment": "comment #71"
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #672"
     },
     {
       "Carrier": "UA",
@@ -2361,8 +2331,8 @@ ShriData = {
       "Gate": "62",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA788",
       "iGate": "",
@@ -2374,9 +2344,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Landed",
-      "Comment": "comment #177"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #969"
     },
     {
       "Carrier": "UA",
@@ -2396,8 +2366,8 @@ ShriData = {
       "Terminal": "3",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1178",
       "iGate": "",
@@ -2410,9 +2380,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Landed",
-      "Comment": "comment #790"
+      "Aircraft": "Airbus A340",
+      "Status": "Confirmed",
+      "Comment": "comment #339"
     },
     {
       "Carrier": "UA",
@@ -2434,8 +2404,8 @@ ShriData = {
       "BagClaim": "9",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA207",
       "iGate": "",
@@ -2447,40 +2417,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
+      "Aircraft": "Airbus A340",
       "Status": "Landed",
-      "Comment": "comment #945"
-    },
-    {
-      "Carrier": "VX",
-      "FlightNum": "357",
-      "FlightType": "A",
-      "SchedTime": "10:34 PM",
-      "EstTime": "10:43 PM",
-      "ActTime": "10:48 PM",
-      "City1": "BOS",
-      "ArrCityName1": "Boston",
-      "Terminal": "2",
-      "Gate": "54B",
-      "BagClaim": "3",
-      "BaseFlight": "",
-      "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "VX357",
-      "iGate": "",
-      "SchedTimeMili": "22:34",
-      "EstTimeMili": "22:43",
-      "BaseFlightCarrier": "",
-      "CityFull": "Boston",
-      "CarrierFull": "Virgin America",
-      "CityCode": "BOS",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Landed",
-      "Comment": "comment #238"
+      "Comment": "comment #169"
     },
     {
       "Carrier": "UA",
@@ -2495,8 +2434,8 @@ ShriData = {
       "Gate": "63",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1756",
       "iGate": "",
@@ -2508,9 +2447,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Boeing 747",
       "Status": "Landed",
-      "Comment": "comment #297"
+      "Comment": "comment #92"
     },
     {
       "Carrier": "UA",
@@ -2526,8 +2465,8 @@ ShriData = {
       "BagClaim": "3",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1599",
       "iGate": "",
@@ -2539,9 +2478,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 777",
-      "Status": "Landed",
-      "Comment": "comment #588"
+      "Aircraft": "Airbus A380",
+      "Status": "Confirmed",
+      "Comment": "comment #703"
     },
     {
       "Carrier": "B6",
@@ -2561,8 +2500,8 @@ ShriData = {
       "BagClaim": "12",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "B6833",
       "iGate": "A",
@@ -2574,9 +2513,9 @@ ShriData = {
       "CityCode": "BOS",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Landed",
-      "Comment": "comment #846"
+      "Aircraft": "Airbus A340",
+      "Status": "Cancelled",
+      "Comment": "comment #38"
     },
     {
       "Carrier": "UA",
@@ -2595,8 +2534,8 @@ ShriData = {
       "Gate": "84C",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA5194",
       "iGate": "",
@@ -2610,7 +2549,7 @@ ShriData = {
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 747",
       "Status": "Retimed",
-      "Comment": "comment #50"
+      "Comment": "comment #627"
     },
     {
       "Carrier": "UA",
@@ -2629,8 +2568,8 @@ ShriData = {
       "Gate": "84B",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6291",
       "iGate": "",
@@ -2642,9 +2581,9 @@ ShriData = {
       "CityCode": "BUR",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Airbus A340",
       "Status": "Retimed",
-      "Comment": "comment #918"
+      "Comment": "comment #809"
     },
     {
       "Carrier": "UA",
@@ -2664,8 +2603,8 @@ ShriData = {
       "BagClaim": "6",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6343",
       "iGate": "",
@@ -2677,9 +2616,9 @@ ShriData = {
       "CityCode": "BUR",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Confirmed",
-      "Comment": "comment #940"
+      "Aircraft": "Airbus A380",
+      "Status": "Landed",
+      "Comment": "comment #361"
     },
     {
       "Carrier": "UA",
@@ -2698,8 +2637,8 @@ ShriData = {
       "Gate": "76B",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA6235",
       "iGate": "",
@@ -2711,9 +2650,9 @@ ShriData = {
       "CityCode": "BUR",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #787"
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #770"
     },
     {
       "Carrier": "UA",
@@ -2731,8 +2670,8 @@ ShriData = {
       "Terminal": "3",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA5655",
       "iGate": "",
@@ -2745,9 +2684,77 @@ ShriData = {
       "CityCode": "BUR",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #177"
+      "Aircraft": "Airbus A380",
+      "Status": "Landed",
+      "Comment": "comment #676"
+    },
+    {
+      "Carrier": "UA",
+      "FlightNum": "6197",
+      "FlightType": "A",
+      "SchedTime": "12:39 PM",
+      "EstTime": "12:39 PM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "BUR",
+      "ArrCityName1": "Burbank",
+      "Terminal": "3",
+      "BaseFlight": "",
+      "inc": 10,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "UA6197",
+      "iGate": "",
+      "SchedTimeMili": "12:39",
+      "EstTimeMili": "12:39",
+      "BaseFlightCarrier": "",
+      "CityFull": "Burbank",
+      "CarrierFull": "United",
+      "Gate": "",
+      "CityCode": "BUR",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Boeing 747",
+      "Status": "Retimed",
+      "Comment": "comment #275"
+    },
+    {
+      "Carrier": "UA",
+      "FlightNum": "6421",
+      "FlightType": "D",
+      "SchedTime": "12:47 PM",
+      "EstTime": "12:47 PM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "BUR",
+      "DepCityName1": "Burbank",
+      "Terminal": "3",
+      "BaseFlight": "",
+      "inc": 10,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "UA6421",
+      "iGate": "",
+      "SchedTimeMili": "12:47",
+      "EstTimeMili": "12:47",
+      "BaseFlightCarrier": "",
+      "CityFull": "Burbank",
+      "CarrierFull": "United",
+      "Gate": "",
+      "CityCode": "BUR",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Airbus A380",
+      "Status": "Confirmed",
+      "Comment": "comment #559"
     },
     {
       "Carrier": "UA",
@@ -2766,8 +2773,8 @@ ShriData = {
       "Gate": "80",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "UA6348",
       "iGate": "",
@@ -2779,9 +2786,9 @@ ShriData = {
       "CityCode": "YYC",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
+      "Aircraft": "Boeing 747",
       "Status": "Landed",
-      "Comment": "comment #472"
+      "Comment": "comment #677"
     },
     {
       "Carrier": "UA",
@@ -2801,8 +2808,8 @@ ShriData = {
       "BagClaim": "6",
       "BaseFlight": "",
       "inc": 12,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "UA6216",
       "iGate": "",
@@ -2814,9 +2821,9 @@ ShriData = {
       "CityCode": "YYC",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Landed",
-      "Comment": "comment #743"
+      "Aircraft": "Airbus A380",
+      "Status": "Retimed",
+      "Comment": "comment #139"
     },
     {
       "Carrier": "UA",
@@ -2837,8 +2844,8 @@ ShriData = {
       "Gate": "87",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1927",
       "iGate": "",
@@ -2850,9 +2857,9 @@ ShriData = {
       "CityCode": "YYC",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
+      "Aircraft": "Airbus A380",
       "Status": "Retimed",
-      "Comment": "comment #721"
+      "Comment": "comment #322"
     },
     {
       "Carrier": "UA",
@@ -2873,8 +2880,8 @@ ShriData = {
       "Gate": "83",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1018",
       "iGate": "",
@@ -2886,9 +2893,9 @@ ShriData = {
       "CityCode": "CUN",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
+      "Aircraft": "Boeing 777",
       "Status": "Confirmed",
-      "Comment": "comment #939"
+      "Comment": "comment #549"
     },
     {
       "Carrier": "UA",
@@ -2906,8 +2913,8 @@ ShriData = {
       "Terminal": "I",
       "BaseFlight": "",
       "inc": 10,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "UA1679",
       "iGate": "",
@@ -2920,9 +2927,9 @@ ShriData = {
       "CityCode": "CUN",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Confirmed",
-      "Comment": "comment #393"
+      "Aircraft": "Airbus A340",
+      "Status": "Retimed",
+      "Comment": "comment #433"
     },
     {
       "Carrier": "US",
@@ -2939,8 +2946,8 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US1965",
       "iGate": "",
@@ -2954,7 +2961,7 @@ ShriData = {
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A340",
       "Status": "Cancelled",
-      "Comment": "comment #624"
+      "Comment": "comment #678"
     },
     {
       "Carrier": "US",
@@ -2962,11 +2969,7 @@ ShriData = {
       "FlightType": "A",
       "SchedTime": "12:29 AM",
       "EstTime": "12:43 AM",
-      "ActTime": {
-        "@attributes": {
-          "nil": "true"
-        }
-      },
+      "ActTime": "12:39 AM",
       "City1": "MCO",
       "ArrCityName1": "Orlando",
       "City2": "CLT",
@@ -2975,8 +2978,8 @@ ShriData = {
       "Gate": "45B",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US557",
       "iGate": "",
@@ -2988,9 +2991,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #725"
+      "Aircraft": "Boeing 777",
+      "Status": "Landed",
+      "Comment": "comment #739"
     },
     {
       "Carrier": "US",
@@ -3009,8 +3012,8 @@ ShriData = {
       "Gate": "47",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US1817",
       "iGate": "",
@@ -3022,9 +3025,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #679"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #104"
     },
     {
       "Carrier": "US",
@@ -3045,8 +3048,8 @@ ShriData = {
       "Gate": "45B",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US1791",
       "iGate": "",
@@ -3058,9 +3061,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #104"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #339"
     },
     {
       "Carrier": "US",
@@ -3083,8 +3086,8 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 15,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US1954",
       "iGate": "",
@@ -3096,9 +3099,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #705"
+      "Aircraft": "Airbus A340",
+      "Status": "Retimed",
+      "Comment": "comment #96"
     },
     {
       "Carrier": "US",
@@ -3117,8 +3120,8 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US662",
       "iGate": "",
@@ -3130,9 +3133,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Landed",
-      "Comment": "comment #509"
+      "Aircraft": "Airbus A380",
+      "Status": "Cancelled",
+      "Comment": "comment #598"
     },
     {
       "Carrier": "US",
@@ -3153,8 +3156,8 @@ ShriData = {
       "Gate": "45A",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US1783",
       "iGate": "",
@@ -3168,7 +3171,7 @@ ShriData = {
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 777",
       "Status": "Cancelled",
-      "Comment": "comment #791"
+      "Comment": "comment #153"
     },
     {
       "Carrier": "US",
@@ -3189,8 +3192,8 @@ ShriData = {
       "Gate": "47",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US461",
       "iGate": "",
@@ -3202,41 +3205,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #587"
-    },
-    {
-      "Carrier": "US",
-      "FlightNum": "436",
-      "FlightType": "A",
-      "SchedTime": "10:20 PM",
-      "EstTime": "10:38 PM",
-      "ActTime": "10:36 PM",
-      "City1": "CLT",
-      "ArrCityName1": "Charlotte",
-      "City2": "PHX",
-      "ArrCityName2": "Phoenix",
-      "Terminal": "1",
-      "Gate": "45A",
-      "BaseFlight": "",
-      "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
-      "Origin": "Domestic",
-      "FlightNumFull": "US436",
-      "iGate": "",
-      "SchedTimeMili": "22:20",
-      "EstTimeMili": "22:38",
-      "BaseFlightCarrier": "",
-      "CityFull": "Charlotte",
-      "CarrierFull": "US Airways",
-      "CityCode": "CLT",
-      "Remark": "",
-      "CarrierLogo": "/images/logo.png",
       "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #282"
+      "Status": "Confirmed",
+      "Comment": "comment #459"
     },
     {
       "Carrier": "US",
@@ -3251,8 +3222,8 @@ ShriData = {
       "Gate": "47",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "US475",
       "iGate": "",
@@ -3264,9 +3235,9 @@ ShriData = {
       "CityCode": "CLT",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A340",
-      "Status": "Cancelled",
-      "Comment": "comment #166"
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #379"
     },
     {
       "Carrier": "UA",
@@ -3285,8 +3256,8 @@ ShriData = {
       "BagClaim": "5",
       "BaseFlight": "",
       "inc": 11,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "International",
       "FlightNumFull": "UA8",
       "iGate": "G",
@@ -3299,9 +3270,9 @@ ShriData = {
       "CityCode": "CTU",
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Landed",
-      "Comment": "comment #280"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #57"
     },
     {
       "Carrier": "WN",
@@ -3325,8 +3296,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN569",
       "iGate": "",
@@ -3337,9 +3308,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "MDW",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Confirmed",
-      "Comment": "comment #296"
+      "Aircraft": "Boeing 777",
+      "Status": "Cancelled",
+      "Comment": "comment #150"
     },
     {
       "Carrier": "WN",
@@ -3363,8 +3334,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 16,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN317",
       "iGate": "",
@@ -3375,9 +3346,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "MDW",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Cancelled",
-      "Comment": "comment #424"
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #363"
     },
     {
       "Carrier": "WN",
@@ -3399,8 +3370,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN4597",
       "iGate": "",
@@ -3411,9 +3382,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "MDW",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Retimed",
-      "Comment": "comment #519"
+      "Aircraft": "Airbus A340",
+      "Status": "Cancelled",
+      "Comment": "comment #903"
     },
     {
       "Carrier": "WN",
@@ -3435,8 +3406,8 @@ ShriData = {
       "Remark": "On Time",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN277",
       "iGate": "",
@@ -3447,9 +3418,9 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "MDW",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Airbus A380",
-      "Status": "Landed",
-      "Comment": "comment #264"
+      "Aircraft": "Boeing 777",
+      "Status": "Confirmed",
+      "Comment": "comment #245"
     },
     {
       "Carrier": "WN",
@@ -3467,8 +3438,8 @@ ShriData = {
       "Remark": "Arrived",
       "BaseFlight": "",
       "inc": 14,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "WN4731",
       "iGate": "",
@@ -3479,16 +3450,16 @@ ShriData = {
       "CarrierFull": "Southwest",
       "CityCode": "MDW",
       "CarrierLogo": "/images/logo.png",
-      "Aircraft": "Boeing 747",
-      "Status": "Cancelled",
-      "Comment": "comment #837"
+      "Aircraft": "Airbus A340",
+      "Status": "Confirmed",
+      "Comment": "comment #137"
     },
     {
       "Carrier": "UA",
       "FlightNum": "1928",
       "FlightType": "D",
       "SchedTime": "12:30 AM",
-      "EstTime": "1:15 AM",
+      "EstTime": "1:25 AM",
       "ActTime": {
         "@attributes": {
           "nil": "true"
@@ -3502,12 +3473,49 @@ ShriData = {
       "Gate": "69",
       "BaseFlight": "",
       "inc": 13,
-      "added_ts": 1438674206,
-      "lastupdated": "08/04/2015 07:43 am ",
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
       "Origin": "Domestic",
       "FlightNumFull": "UA1928",
       "iGate": "",
       "SchedTimeMili": "00:30",
+      "EstTimeMili": "01:25",
+      "BaseFlightCarrier": "",
+      "CityFull": "Chicago/O'Hare",
+      "CarrierFull": "United",
+      "CityCode": "ORD",
+      "Remark": "",
+      "CarrierLogo": "/images/logo.png",
+      "Aircraft": "Boeing 747",
+      "Status": "Landed",
+      "Comment": "comment #2"
+    },
+    {
+      "Carrier": "UA",
+      "FlightNum": "1778",
+      "FlightType": "A",
+      "SchedTime": "1:24 AM",
+      "EstTime": "1:15 AM",
+      "ActTime": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "City1": "DEN",
+      "ArrCityName1": "Denver",
+      "City2": "ORD",
+      "ArrCityName2": "Chicago/O'Hare",
+      "Terminal": "3",
+      "Gate": "82",
+      "BagClaim": "1",
+      "BaseFlight": "",
+      "inc": 14,
+      "added_ts": 1438674902,
+      "lastupdated": "08/04/2015 07:55 am ",
+      "Origin": "Domestic",
+      "FlightNumFull": "UA1778",
+      "iGate": "",
+      "SchedTimeMili": "01:24",
       "EstTimeMili": "01:15",
       "BaseFlightCarrier": "",
       "CityFull": "Chicago/O'Hare",
@@ -3516,8 +3524,8 @@ ShriData = {
       "Remark": "",
       "CarrierLogo": "/images/logo.png",
       "Aircraft": "Boeing 747",
-      "Status": "Confirmed",
-      "Comment": "comment #990"
+      "Status": "Cancelled",
+      "Comment": "comment #444"
     }
   ]
 };

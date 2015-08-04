@@ -1,0 +1,393 @@
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  margin: 2vh auto;
+  width: 90vw;
+  font-size: 1.4rem;
+  font-weight: 200;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* main board styles */
+
+.board-wrapper {
+  position: relative;
+}
+.board {
+  border-collapse: collapse;
+  height: 96vh;
+  overflow-y: auto;
+  display: block;
+}
+.board::before {
+  content: "";
+  display: table-row;
+  height: 4rem;
+}
+.board td,
+.board th {
+  text-align: center;
+  padding: 1rem 0;
+}
+.board th {
+  height: 2rem;
+}
+.board td span,
+.board td img {
+  margin: 0;
+  padding: 0 1rem;
+}
+.board td img {
+  height: 2rem;
+}
+.board-head {
+  position: absolute;
+  background-color: #ccc;
+  height: 4rem;
+  top: 0;
+  z-index: 4;
+}
+.board-row:nth-child(2n) {
+  background-color: #eee;
+}
+.board-row:hover {
+  color: #39f;
+}
+.board-row td {
+  position: relative;
+}
+.board-row td > * {
+  position: relative;
+  z-index: 2;
+}
+.board-row td::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+.board-row td::after {
+  content: "";
+  display: none;
+  background-color: #cef;
+  box-shadow: 0 0 2px 2px #cef;
+  opacity: 0.5;
+  position: fixed;
+  height: 96vh;
+  top: 2vh;
+  z-index: 1;
+}
+.board-row td:hover::before {
+  box-shadow: 0 0 1px 1px #ccc;
+}
+.board-row td:hover::after {
+  display: block;
+}
+
+/* select type menu and filtering */
+
+.board-filter {
+  padding: 1rem;
+  height: 2rem;
+  background-color: #cef;
+  font-weight: 600;
+  transition: all 1s ease;
+  position: absolute;
+  transform: translateX(-100%);
+  z-index: 5;
+}
+.board-filter:hover {
+  transform: translateX(0);
+}
+.board-filter::before {
+  content: "";
+  display: table-cell;
+  height: 4rem;
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  right: -2rem;
+}
+.board-filter::after {
+  opacity: 1;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #39f;
+  position: absolute;
+  top: 2px;
+  right: -10px;
+  transition: opacity 3s ease;
+  animation: jump 2s infinite ease;
+}
+@keyframes jump {
+  7% {
+    transform: translateX(35px);
+    animation-timing-function: ease;
+  }
+  16% { transform: translateX(15px);  }
+  23% { transform: translateX(6px);  }
+  28% { transform: translateX(2px);  }
+  0%, 12%, 20%, 26%, 30%, 100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+  }
+}
+.board-filter:hover::after {
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.board-filter label {
+  padding: 1rem;
+  transition: opacity 0.5s ease;
+}
+.board-filter label::after {
+  content: "\a0\a0\2713";
+  display: inline-block;
+}
+.board-filter-input {
+  display: none;
+}
+/* checkbox state */
+.board-filter-input#board-arrival:not(:checked) ~
+  .board-filter label[for="board-arrival"],
+.board-filter-input#board-departure:not(:checked) ~
+  .board-filter label[for="board-departure"] {
+    transition: opacity 0.5s ease;
+    opacity: 0.5;
+}
+.board-filter-input#board-arrival:not(:checked) ~
+  .board-filter label[for="board-arrival"]::after,
+.board-filter-input#board-departure:not(:checked) ~
+  .board-filter label[for="board-departure"]::after {
+    content: "\a0\a0\2715";
+}
+/* filtering rows */
+.board-filter-input#board-arrival:not(:checked) ~
+  .board-wrapper .board-arrival,
+.board-filter-input#board-departure:not(:checked) ~
+  .board-wrapper .board-departure {
+    display: none;
+}
+.board-filter-input#board-arrival:not(:checked) ~
+  .board-wrapper .board-departure-even,
+.board-filter-input#board-departure:not(:checked) ~
+  .board-wrapper .board-arrival-even {
+    background-color: white;
+}
+.board-filter-input#board-arrival:not(:checked) ~
+  .board-wrapper .board-departure-odd,
+.board-filter-input#board-departure:not(:checked) ~
+  .board-wrapper .board-arrival-odd {
+    background-color: #eee;
+}
+
+/* media size - begins more 900px  */
+
+.board-type,
+.board-type::after {
+  width: 5vw;
+}
+.board-number,
+.board-aircraft,
+.borad-time,
+.board-status,
+.board-number::after,
+.board-aircraft::after,
+.borad-time::after,
+.board-status::after {
+  width: 10vw;
+}
+.board-company,
+.board-city,
+.board-comments,
+.board-company::after,
+.board-city::after,
+.board-comments::after {
+  width: 15vw;
+}
+.board-number-code,
+.board-company-code,
+.board-city-code {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .board-company-full {
+    display: none;
+  }
+  .board-company-code {
+    display: inline;
+  }
+}
+
+@media (max-width: 800px) {
+  .board-number-full,
+  .board-company-logo,
+  .board-city-full {
+    display: none;
+  }
+  .board-number-code,
+  .board-company-code,
+  .board-city-code {
+    display: inline;
+  }
+}
+
+@media (max-width: 700px) {
+  .board-aircraft { 
+    display: none;
+  }
+  .board-type,
+  .board-type::after {
+    width: 7vw;
+  }
+  .borad-time,
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
+    width: 14vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .board-comments { 
+    display: none;
+  }
+  .board-number,
+  .board-number::after {
+    width: 14vw;
+  }
+  .board-company,
+  .board-status,
+  .board-company::after,
+  .board-status::after {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .board-type,
+  .board-type::after {
+    width: 10vw;
+  }
+  .board-number,
+  .board-number::after {
+    width: 15vw;
+  }
+  .borad-time,
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
+    width: 25vw;
+  }
+  .board-company { 
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+/* watch and other small device */
+
+/* ~ 312px */
+@media (max-width: 350px) {
+  body {
+    min-width: 300px;
+    overflow-x: auto;
+  }
+  .container {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .board {
+    height: 100vh;
+    box-shadow: none;
+  }
+  .board-row td::after {
+    height: 100vh;
+    top: 0;
+  }
+  .board-wrapper,
+  .board,
+  .board thead,
+  .board tbody {
+    width: 300px;
+  }
+  .board-type,
+  .board-type::after {
+    width: 40px;
+  }
+  .board-number,
+  .board-city,
+  .board-number::after,
+  .board-city::after {
+    width: 50px;
+  }
+  .borad-time,
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
+    width: 80px;
+  }
+}
+
+/* ~ 272px */
+@media (max-width: 300px) {
+  body {
+    min-width: 265px;
+    overflow-x: auto;
+  }
+  .container {
+    margin: 0 auto;
+    width: 265px;
+  }
+  .board {
+    height: 100vh;
+    box-shadow: none;
+  }
+  .board-wrapper,
+  .board,
+  .board thead,
+  .board tbody {
+    width: 265px;
+  }
+  .board-type,
+  .board-type::after {
+    width: 35px;
+  }
+  .board-number,
+  .board-city,
+  .board-number::after,
+  .board-city::after {
+    width: 45px;
+  }
+  .borad-time,
+  .board-status,
+  .borad-time::after,
+  .board-status::after {
+    width: 70px;
+  }
+}

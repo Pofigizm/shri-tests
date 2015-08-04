@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shri-test</title>
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/board.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    
+    <div class="container">
+      <input class="board-filter-input" id="board-arrival" type="checkbox" checked>
+      <input class="board-filter-input" id="board-departure" type="checkbox" checked>
+      <div class="board-filter">
+        <label for="board-arrival">Прилет</label>
+        <label for="board-departure">Вылет</label>
+      </div>
+      <div class="board-wrapper"></div>
+    </div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/data.json"></script>
+    <script src="scripts/board.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

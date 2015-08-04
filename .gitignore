@@ -1,4 +1,4 @@
-app/scripts/data.jsonp
+app/scripts/data.json
 node_modules
 dist
 .tmp

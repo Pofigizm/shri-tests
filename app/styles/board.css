@@ -10,6 +10,40 @@ body, html {
 html {
   font-size: 10px;
 }
+.fader {
+  display: none;  
+}
+.show-detail .fader {
+  display: block;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.show-detail .fader::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+.show-detail .board-row-detail {
+  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  left: 10vw;
+  top: 10vh;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .container {
   margin: 2vh auto;
   width: 90vw;
@@ -31,6 +65,7 @@ html {
   height: 96vh;
   overflow-y: auto;
   display: block;
+  table-layout: auto;
 }
 .board::before {
   content: "";

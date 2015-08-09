@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function(){
   console.time('render');
 
   var board = document.createElement('table'),
+      _body = document.querySelector('body'),
       container = document.querySelector('.board-wrapper'),
+      fader = document.querySelector('.fader'),
+      detail = document.querySelector('.board-row-detail'),
       inner = '',
       trArrival = 0,
       trDeparture = 0;
@@ -50,12 +53,31 @@ document.addEventListener('DOMContentLoaded', function(){
  
   board.className = 'board';
   board.innerHTML = inner;
+
+  fader.addEventListener('click', function() {
+    _body.className = '';
+  });
   board.addEventListener('click', function(event) {
     var row = _closest(event.target, function(el) {
-      return el.className === 'board-row'; 
-    });
+        return [].indexOf.call(el.classList, 'board-row') !== -1; 
+      }),
+      newDetail;
+
     if (row) {
-      alert(row.getAttribute('data-index'));
+      _body.className = 'show-detail';
+
+      newDetail = document.createElement('div');
+      newDetail.className = 'board-row-detail';
+      newDetail.innerHTML = '<table>' +
+        shriBoard.reduce(function(res, el) {
+          return res + _html({
+            tag: 'tr',
+            klass: el.klass,
+            value: 'name'
+          }, el);
+        }, '') + '</table>';
+        
+      fader.replaceChild(newDetail, detail);
     }
   });
 

@@ -43,6 +43,20 @@ html {
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.board-row-detail table {
+  border-collapse: collapse;
+  margin: 12vh 10vw;
+  font-size: 1.4rem;
+  width: 60vw;
+}
+.board-row-detail td {
+  padding: 1rem;
+  border-bottom: 1px solid #999;
+}
+.board-row-detail td:first-child {
+  width: 40%;
+  font-weight: 600;
+}
 
 .container {
   margin: 2vh auto;

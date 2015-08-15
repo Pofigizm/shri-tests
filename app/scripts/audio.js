@@ -20,24 +20,23 @@ var
   audioAction.range.min = 0;
   audioAction.range.max = 1000;
 
+  audioFile.ondragover = function(event) {
+    event.preventDefault();
+    _setClass(audioFile, 'hover', true);
+  };
+  audioFile.ondragleave = function(event) {
+    event.preventDefault();
+    _setClass(audioFile, 'hover', false);
+  };
+
+  audioFile.ondrop = function(event) {
+    event.preventDefault();
+    _setClass(audioFile, 'hover', false);
+    _loadFile(event.dataTransfer.files[0]);
+  };
+
   audioInput.onchange = function() {
-    var currentFile = audioInput.files[0],
-        currentMessage;
-
-    if (audioPlayer.canPlayType(currentFile.type) === '') {
-      currentMessage = audioPath.innerHTML;
-      audioPath.innerHTML = 'Данный тип файла не поддерживается';
-      _setClass(audioFile, 'error', true);
-      setTimeout(function() {
-        audioPath.innerHTML = currentMessage;
-        _setClass(audioFile, 'error', false);
-      }, 2000);
-      return;
-    }
-
-    audioPath.innerHTML = currentFile.name;
-    audioPlayer.src = window.URL.createObjectURL(currentFile);
-    audioPlayer.load();
+    _loadFile(audioInput.files[0]);
   };
 
   audioAction.play.onclick = function() {
@@ -55,6 +54,25 @@ var
                               audioPlayer.duration / 1000 || 0;
     audioAction.rangeSet = false;
   };
+
+  function _loadFile(file) {
+    var currentMessage;
+
+    if (audioPlayer.canPlayType(file.type) === '') {
+      currentMessage = audioPath.innerHTML;
+      audioPath.innerHTML = 'Данный тип файла не поддерживается';
+      _setClass(audioFile, 'error', true);
+      setTimeout(function() {
+        audioPath.innerHTML = currentMessage;
+        _setClass(audioFile, 'error', false);
+      }, 2000);
+      return;
+    }
+
+    audioPath.innerHTML = file.name;
+    audioPlayer.src = window.URL.createObjectURL(file);
+    audioPlayer.load();
+  }
 
 (function updateView() {
   _setClass(audioAction.play, 'paused', audioPlayer.paused);

@@ -47,6 +47,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 1rem;
 }
+.audio > .audio-file.hover,
 .audio > .audio-file:hover {
   background-color: #cec;
   cursor: pointer;

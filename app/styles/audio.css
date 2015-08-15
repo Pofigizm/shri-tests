@@ -12,10 +12,82 @@ html {
 }
 .container {
   margin: 10vh auto;
-  padding: 5vh 5vw;
+  padding: 5vw;
   width: 80vw;
   font-size: 1rem;
   font-weight: 200;
+}
+
+.audio {
+  display: flex;
+  flex-flow: column nowrap;
   background-color: #eee;
+  font-size: 2rem;
+  color: #666;
+  padding: 2vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.audio > * {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.audio > * > * {
+  margin: 2vw;
+  padding: 0vw;
+  flex-grow: 0; 
+}
+.audio > .audio-actions > .range-action,
+.audio > .audio-file > .file-path {
+  flex-grow: 1; 
+}
+
+.audio > .audio-file {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+.audio > .audio-file:hover {
+  background-color: #cec;
+  cursor: pointer;
+}
+.audio .audio-input,
+.audio .audio-player {
+  display: none;
+}
+
+.audio button {
+  border: none;
+  background-color: #eee;
+}
+.audio button:hover {
+  color: #0c0;
+  cursor: pointer;
+}
+.audio button:focus {
+  outline: none;
+}
+.audio .range-action:hover {
+  cursor: pointer;
+}
+.audio span {
+  white-space:nowrap;
+}
+
+.audio .icon {
+  font-size: 2rem;
+}
+.audio .mute-action.muted > .ion-android-volume-up,
+.audio .mute-action:not(.muted) > .ion-android-volume-off,
+.audio .play-action.paused > .ion-pause,
+.audio .play-action:not(.paused) > .ion-play {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 25px;
+    width: 450px;
+  }
 }
 

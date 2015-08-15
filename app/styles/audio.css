@@ -51,12 +51,16 @@ html {
   background-color: #cec;
   cursor: pointer;
 }
+.audio > .audio-file.error {
+  background-color: #ecc;
+}
 .audio .audio-input,
 .audio .audio-player {
   display: none;
 }
 
 .audio button {
+  width: 1.5rem;
   border: none;
   background-color: #eee;
 }
@@ -77,10 +81,10 @@ html {
 .audio .icon {
   font-size: 2rem;
 }
-.audio .mute-action.muted > .ion-android-volume-up,
-.audio .mute-action:not(.muted) > .ion-android-volume-off,
-.audio .play-action.paused > .ion-pause,
-.audio .play-action:not(.paused) > .ion-play {
+.audio .play-action.paused       > .ion-pause,
+.audio .play-action:not(.paused) > .ion-play,
+.audio .mute-action.muted        > .ion-android-volume-off,
+.audio .mute-action:not(.muted)  > .ion-android-volume-up {
   display: none;
 }
 

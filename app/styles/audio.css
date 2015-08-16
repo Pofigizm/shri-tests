@@ -17,6 +17,15 @@ html {
   font-size: 1rem;
   font-weight: 200;
 }
+.fps-block {
+  width: 50px;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
 
 .audio {
   display: flex;
@@ -38,12 +47,22 @@ html {
   padding: 0vw;
   flex-grow: 0; 
 }
+.audio > .audio-vizualizer {
+  height: 20vh;
+}
+.audio > .audio-equalizer {
+  height: 15rem;
+}
+.audio > .audio-equalizer > * {
+  margin: 1rem;
+}
 .audio > .audio-actions > .range-action,
 .audio > .audio-file > .file-path {
   flex-grow: 1; 
 }
 
-.audio > .audio-file {
+.audio > .audio-file,
+.audio > .audio-vizualizer {
   border: 1px solid #ccc;
   border-radius: 1rem;
 }
@@ -55,6 +74,18 @@ html {
 .audio > .audio-file.error {
   background-color: #ecc;
 }
+.audio .equalize-element .equalize-name {
+  display: block;
+  font-size: 1rem;
+  height: 1rem;
+  margin: 1rem 0;
+}
+.audio .equalize-element .equalize-action {
+  -webkit-appearance: slider-vertical;
+  width: 2rem;
+  height: 10rem;
+}
+
 .audio .audio-input,
 .audio .audio-player {
   display: none;

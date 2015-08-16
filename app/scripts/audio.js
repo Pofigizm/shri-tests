@@ -13,6 +13,7 @@ var
     range:  _getNode('.audio .audio-actions .range-action'),
     rangeSet: false
   },
+  fpsShow = _getNode('.fps-block'),
 
   // browsers compatable
   requestAF = window.requestAnimationFrame ||
@@ -99,7 +100,18 @@ var
   };
 
   // update all view every animation frame
-  (function updateView() {
+  (function updateView(previousTime, count) {
+    var currentTime = Date.now();
+
+    // perfomance show
+    if (currentTime - previousTime > 200) {
+      fpsShow.innerHTML = Math.floor(60 * 16 * count / (currentTime - previousTime)) + ' fps';
+      count = 0;
+    } else {
+      currentTime = previousTime;
+      count++;
+    }
+
     _setClass(audioAction.play, 'paused', audioPlayer.paused);
     _setClass(audioAction.mute, 'muted', audioPlayer.muted);
     if (!audioAction.rangeSet) {
@@ -110,10 +122,9 @@ var
                   ' / ' + _getTime(audioPlayer.duration);
 
     audioAnalyser.getByteFrequencyData(audioBands);
-    //console.log(audioBands);
 
-    requestAF(updateView);
-  })();
+    requestAF(updateView.bind(null, currentTime, count));
+  })(Date.now(), 0);
 
 // util function
 
@@ -141,8 +152,9 @@ function _setClass(node, klass, condition) {
   }
 }
 
-function _getNode(selector) {
-  return document.querySelectorAll(selector)[0];
+function _getNode(selector, context) {
+  context = (context instanceof Node) ? context : document;
+  return context.querySelectorAll(selector)[0];
 }
 
 function _getSupportedAudio() {

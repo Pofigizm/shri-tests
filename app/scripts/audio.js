@@ -1,7 +1,8 @@
 /* */
 
 var
-  // elements
+  // base elements
+  fpsShow     = _getNode('.fps-block'),
   audioInput  = _getNode('.audio .audio-input'),
   audioPlayer = _getNode('.audio .audio-player'),
   audioFile   = _getNode('.audio .audio-file'),
@@ -13,7 +14,13 @@ var
     range:  _getNode('.audio .audio-actions .range-action'),
     rangeSet: false
   },
-  fpsShow = _getNode('.fps-block'),
+  // visualizer and equalizer elements
+  visualizer  = _getNode('.audio .audio-vizualizer'),
+  equalizer   = _getNode('.audio .audio-equalizer'),
+  equalElem   = _getNode('.audio .audio-equalizer .equalize-element'),
+  equalName   = _getNode.bind(null, '.equalize-name'),
+  equalAction = _getNode.bind(null, '.equalize-action'),
+  equalizes,
 
   // browsers compatable
   requestAF = window.requestAnimationFrame ||
@@ -40,9 +47,26 @@ var
       return curr;
     });
 
-  // start settings
+  // start settings and add dynamic elements
   audioAction.range.min = 0;
   audioAction.range.max = 1000;
+
+  equalizer.removeChild(equalElem);
+
+  equalAction(equalElem).min    = -16;
+  equalAction(equalElem).max    = 16;
+  equalAction(equalElem).step   = 0.1;
+  equalAction(equalElem).value  = 0;
+
+  equalizes = audioFreqs.map( function(elem, index) {
+    var result = equalElem.cloneNode(true);
+    equalName(result).innerHTML = elem;
+    equalAction(result).onchange = function(event) {
+      audioFilters[index].gain.value = event.target.value;
+    };
+    equalizer.appendChild(result);
+    return result;
+  });
 
   // event handlers
 

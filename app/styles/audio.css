@@ -79,6 +79,7 @@ html {
   font-size: 1rem;
   height: 1rem;
   margin: 1rem 0;
+  text-align: center;
 }
 .audio .equalize-element .equalize-action {
   -webkit-appearance: slider-vertical;

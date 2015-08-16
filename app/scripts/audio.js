@@ -146,9 +146,52 @@ var
                   ' / ' + _getTime(audioPlayer.duration);
 
     audioAnalyser.getByteFrequencyData(audioBands);
+    renderVisualization(visualizer, audioBands);
 
     requestAF(updateView.bind(null, currentTime, count));
   })(Date.now(), 0);
+
+  function renderVisualization(canvas, band) {
+    // crop
+    band = [].slice.call(band, 50, 50 + 512);
+
+    var 
+      cvDraw = canvas.getContext('2d'),
+      cvWidth = canvas.clientWidth,
+      cvHeight = canvas.clientHeight,
+      bandSize = 256,
+      barSpace = 2,
+      barWidth = 2,
+      barCount = Math.pow(2, Math.floor( Math.log2(
+        (cvWidth - barSpace) / (barWidth + barSpace)
+      ))),
+      lightSize = band.length / barCount,
+      lightBand = new Array(barCount + 1).join(0).split('');
+   
+    barWidth = ((cvWidth - barSpace) / barCount) - barSpace;
+    canvas.width = cvWidth;
+    canvas.height = cvHeight;
+
+    cvDraw.clearRect(0, 0, cvWidth, cvHeight);
+    cvDraw.fillStyle = '#0c0';
+    cvDraw.lineCap = 'round';
+
+    lightBand.map(function(bar, index) {
+      bar = []
+        .slice.call(band, index * lightSize, index * lightSize + lightSize)
+        .reduce( function(res, val) {
+          return res + val;
+        }, 0) / lightSize;
+
+      cvDraw.fillRect(
+        barSpace + (barWidth + barSpace) * index,
+        cvHeight,
+        barWidth,
+        - (bar * cvHeight / bandSize)
+      );
+      return bar;
+    });
+  }
 
 // util function
 

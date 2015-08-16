@@ -23,7 +23,7 @@ option = {
   path: '/flightprocessing/fullFlightData.txt'
 };
 
-file = 'app/scripts/data.json';
+file = 'app/board/data.json';
 
 httpFn = function(response) {
   str = '';
@@ -45,7 +45,7 @@ endFn = function() {
       res[el] = res[el] ? res[el] + 1 : 1;
       return res;
     }, fields);
-    elem['CarrierLogo'] = '/images/logo.png';
+    elem['CarrierLogo'] = './logo.png';
     elem['Aircraft'] = airCraft[Math.floor(Math.random() * 10)];
     elem['Status'] = statusList[Math.floor(Math.random() * 4)];
     elem['Comment'] = 'comment #' + Math.floor(Math.random() * 999);

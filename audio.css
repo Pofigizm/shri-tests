@@ -1,0 +1,130 @@
+body {
+  background: #fafafa;
+  font-family: "Courier", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  margin: 10vh auto;
+  padding: 5vw;
+  width: 80vw;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.fps-block {
+  width: 50px;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+
+.audio {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #eee;
+  font-size: 2rem;
+  color: #666;
+  padding: 2vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.audio > * {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.audio > * > * {
+  margin: 2vw;
+  padding: 0vw;
+  flex-grow: 0; 
+}
+.audio > .audio-vizualizer {
+  height: 20vh;
+}
+.audio > .audio-equalizer {
+  height: 15rem;
+}
+.audio > .audio-equalizer > * {
+  margin: 1rem;
+}
+.audio > .audio-actions > .range-action,
+.audio > .audio-file > .file-path {
+  flex-grow: 1; 
+}
+
+.audio > .audio-file,
+.audio > .audio-vizualizer {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+.audio > .audio-file.hover,
+.audio > .audio-file:hover {
+  background-color: #cec;
+  cursor: pointer;
+}
+.audio > .audio-file.error {
+  background-color: #ecc;
+}
+.audio .equalize-element .equalize-name {
+  display: block;
+  font-size: 1rem;
+  height: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.audio .equalize-element .equalize-action {
+  -webkit-appearance: slider-vertical;
+  width: 2rem;
+  height: 10rem;
+}
+
+.audio .audio-input,
+.audio .audio-player {
+  display: none;
+}
+
+.audio button {
+  width: 1.5rem;
+  border: none;
+  background-color: #eee;
+}
+.audio button:hover {
+  color: #0c0;
+  cursor: pointer;
+}
+.audio button:focus {
+  outline: none;
+}
+.audio .range-action:hover {
+  cursor: pointer;
+}
+.audio span {
+  white-space:nowrap;
+}
+
+.audio .icon {
+  font-size: 2rem;
+}
+.audio .play-action.paused       > .ion-pause,
+.audio .play-action:not(.paused) > .ion-play,
+.audio .mute-action.muted        > .ion-android-volume-off,
+.audio .mute-action:not(.muted)  > .ion-android-volume-up {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 25px;
+    width: 450px;
+  }
+}
+

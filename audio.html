@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shri-test</title>
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./audio.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="fps-block">60 fps</div>
+
+      <div class="audio">
+
+        <label class="audio-file">
+          <span class="file-path">Файл не выбран</span>
+          <i class="icon ion-android-folder-open"></i>
+          <input type="file" class="audio-input">
+        </label>
+
+        <div class="audio-actions">
+          <button class="play-action paused">
+            <i class="icon ion-play"></i>
+            <i class="icon ion-pause"></i>
+          </button>
+          <button class="mute-action">
+            <i class="icon ion-android-volume-up"></i>
+            <i class="icon ion-android-volume-off"></i>
+          </button>
+          <input class="range-action" type="range">
+          <span class="time">0:00 / 0:00</span>
+        </div>
+
+        <canvas class="audio-vizualizer"></canvas>
+
+        <div class="audio-equalizer">
+          <div class="equalize-element">
+            <span class="equalize-name">1000</span>
+            <input class="equalize-action" type="range" orient="vertical">
+          </div>
+        </div>
+
+        <audio src="" class="audio-player"></audio>
+
+      </div>
+
+    </div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="./audio.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

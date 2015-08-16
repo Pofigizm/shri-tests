@@ -1,6 +1,7 @@
 /* */
 
 var
+  // elements
   audioInput  = _getNode('.audio .audio-input'),
   audioPlayer = _getNode('.audio .audio-player'),
   audioFile   = _getNode('.audio .audio-file'),
@@ -12,14 +13,39 @@ var
     range:  _getNode('.audio .audio-actions .range-action'),
     rangeSet: false
   },
+
+  // browsers compatable
   requestAF = window.requestAnimationFrame ||
               window.mozRequestAnimationFrame ||
               window.webkitRequestAnimationFrame ||
-              window.msRequestAnimationFrame;
+              window.msRequestAnimationFrame,
+  AudioCtx  = window.AudioContext || window.webkitAudioContext,
 
+  // audio parts of streams
+  audioContext  = new AudioCtx(),
+  audioSource   = audioContext.createMediaElementSource(audioPlayer),
+  audioFreqs    = [60, 170, 310, 600, 1000, 3000, 6000, 12000, 14000, 16000],
+  audioFilters  = audioFreqs.map(_getFilter.bind(null, audioContext)),
+  audioAnalyser = audioContext.createAnalyser(),
+  audioBands    = new Uint8Array(audioAnalyser.frequencyBinCount);
+
+  // audio strean route: audio >> filters >> analyser >> output
+  [audioSource, audioFilters, audioAnalyser, audioContext.destination]
+    .reduce( function(res, part) {
+      return res.concat(part);
+    }, [])
+    .reduce( function(prev, curr) {
+      prev.connect(curr);
+      return curr;
+    });
+
+  // start settings
   audioAction.range.min = 0;
   audioAction.range.max = 1000;
 
+  // event handlers
+
+  // file open and d&d
   audioFile.ondragover = function(event) {
     event.preventDefault();
     _setClass(audioFile, 'hover', true);
@@ -28,31 +54,13 @@ var
     event.preventDefault();
     _setClass(audioFile, 'hover', false);
   };
-
   audioFile.ondrop = function(event) {
     event.preventDefault();
     _setClass(audioFile, 'hover', false);
     _loadFile(event.dataTransfer.files[0]);
   };
-
   audioInput.onchange = function() {
     _loadFile(audioInput.files[0]);
-  };
-
-  audioAction.play.onclick = function() {
-    audioPlayer[audioPlayer.paused ? 'play' : 'pause']();
-  };
-  audioAction.mute.onclick = function() {
-    audioPlayer.muted = !audioPlayer.muted;
-  };
-
-  audioAction.range.onmousedown = function() {
-    audioAction.rangeSet = true;
-  };
-  audioAction.range.onmouseup = function() {
-    audioPlayer.currentTime = audioAction.range.value *
-                              audioPlayer.duration / 1000 || 0;
-    audioAction.rangeSet = false;
   };
 
   function _loadFile(file) {
@@ -74,20 +82,51 @@ var
     audioPlayer.load();
   }
 
-(function updateView() {
-  _setClass(audioAction.play, 'paused', audioPlayer.paused);
-  _setClass(audioAction.mute, 'muted', audioPlayer.muted);
-  if (!audioAction.rangeSet) {
-    audioAction.range.value = 1000 * audioPlayer.currentTime /
-                                     audioPlayer.duration;
-  }
-  audioTime.innerHTML = _getTime(audioPlayer.currentTime) +
-                ' / ' + _getTime(audioPlayer.duration);
+  // audio control actions
+  audioAction.play.onclick = function() {
+    audioPlayer[audioPlayer.paused ? 'play' : 'pause']();
+  };
+  audioAction.mute.onclick = function() {
+    audioPlayer.muted = !audioPlayer.muted;
+  };
+  audioAction.range.onmousedown = function() {
+    audioAction.rangeSet = true;
+  };
+  audioAction.range.onmouseup = function() {
+    audioPlayer.currentTime = audioAction.range.value *
+                              audioPlayer.duration / 1000 || 0;
+    audioAction.rangeSet = false;
+  };
 
-  requestAF(updateView);
-})();
+  // update all view every animation frame
+  (function updateView() {
+    _setClass(audioAction.play, 'paused', audioPlayer.paused);
+    _setClass(audioAction.mute, 'muted', audioPlayer.muted);
+    if (!audioAction.rangeSet) {
+      audioAction.range.value = 1000 * audioPlayer.currentTime /
+                                       audioPlayer.duration;
+    }
+    audioTime.innerHTML = _getTime(audioPlayer.currentTime) +
+                  ' / ' + _getTime(audioPlayer.duration);
 
-/* util function */
+    audioAnalyser.getByteFrequencyData(audioBands);
+    //console.log(audioBands);
+
+    requestAF(updateView);
+  })();
+
+// util function
+
+function _getFilter(audioCtx, frequency) {
+  var filter = audioCtx.createBiquadFilter();
+
+  filter.type = 'peaking';
+  filter.frequency.value = frequency;
+  filter.Q.value = 1;
+  filter.gain.value = 0;
+
+  return filter;
+}
 
 function _getTime(sec) {
   sec = sec || 0;
@@ -115,7 +154,7 @@ function _getSupportedAudio() {
     'audio/wav':  ['.wav'],
     'audio/webm': ['.webm'],
     'audio/flac': ['.flac']
-  }, 
+  },
   audioElement = document.createElement('audio'),
   isSupport = audioElement.canPlayType.bind(audioElement);
 
@@ -124,4 +163,3 @@ function _getSupportedAudio() {
   }, []);
 }
 console.log('You brouser is suppurt only ' + _getSupportedAudio().join(', ') + ' file types.');
-
